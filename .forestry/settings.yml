@@ -5,21 +5,18 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: data/home.yaml
-  label: Home Page
-  match: "**/*"
-- type: document
-  path: data/design.yaml
-  label: Design
-  match: "**/*"
-- type: document
   path: data/profile.yaml
   label: Profile
-  match: "**/*"
 - type: heading
   label: My Profile
 - type: heading
   label: My Website
+- type: document
+  path: data/design.yaml
+  label: Design
+- type: document
+  path: data/home.yaml
+  label: Home Page
 - type: directory
   path: content
   label: Pages
