@@ -218,5 +218,29 @@ fields:
     max: 
     labelField: 
   label: Price Preview One
+- name: price_preview_two
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: price
+    type: text
+    config:
+      required: false
+    label: Price
+    description: Include the dollar symbol.
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Price Preview Two
 pages:
 - data/home.yaml
