@@ -23,5 +23,56 @@ fields:
     - name: open_in_a_new_tab
       type: boolean
       label: Open in a new tab
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
     label: Image Box One
+  - name: image_box_two
+    type: field_group
+    config: {}
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
+    - name: open_in_a_new_tab
+      type: boolean
+      label: Open in a new tab
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    label: Image Box Two
+  - name: image_box_three
+    type: field_group
+    config: {}
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
+    - name: open_in_a_new_tab
+      type: boolean
+      label: Open in a new tab
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    label: Image Box Three
   label: Image Boxes
