@@ -114,5 +114,37 @@ fields:
         format: markdown
     label: Second Introduction
   label: Welcome Text
+- name: image_overlay
+  type: field_group
+  config: {}
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: body_text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body Text
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: open_in_a_new_tab
+    type: boolean
+    label: Open in a new tab
+  label: Image Overlay
 pages:
 - data/home.yaml
