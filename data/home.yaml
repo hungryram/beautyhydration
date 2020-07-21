@@ -6,12 +6,12 @@ image_boxes:
     image: "/uploads/standard-king-ocean-view-ca1b0331.jpg"
     open_in_a_new_tab: false
   image_box_two:
-    title: ''
-    link: ''
+    title: Visit
+    link: "/contact"
     open_in_a_new_tab: false
-    image: ''
+    image: "/uploads/cat-womens-lingerie-lounge-sleepwear-banner-2001.jpeg"
   image_box_three:
-    title: ''
-    link: ''
+    title: Office
+    link: "/contact"
     open_in_a_new_tab: false
-    image: ''
+    image: "/uploads/fc56c76e35b76ec75d1b1889c6e4cd3c.jpg"
