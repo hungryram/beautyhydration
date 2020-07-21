@@ -313,7 +313,14 @@ li.active a {
 /* NAV */
 @media screen and (max-width: 1087px){
 
+    .right-nav {
+        display: none;
+    }
 
+    div.home-slide.slick-initialized.slick-slider {
+        top: -130px;
+    }
+    
 
     span.navbar-burger {
         transition: all .2s ease;
@@ -377,6 +384,8 @@ li.active a {
         overflow: hidden;
         transition: max-height .2s ease;
     }
+
+
 }
 
 
@@ -384,6 +393,7 @@ li.active a {
 @media screen and (min-width:1087px) {
 
 /* NEW */
+
 header.navbar>.container {
     align-items: center;
 }
@@ -607,5 +617,5 @@ span.price-preview {
 
 .footer-links a,
 div.bottom-credit a {
-    color: #fff;
+    color: #939393;
 }

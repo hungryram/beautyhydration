@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://beautyhydration.netlify.app/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Beauty Hydration"
 [[menu.main]]
 name = "Home"
 url = "/"
