@@ -44,3 +44,10 @@ image_call_to_action:
   heading: Are you sick?
   body_text: LEARN WHY YOU SHOULD GET AN I.V. OR AN IMMUNITY BOOST INJECTION. LET
     US HELP YOU ENHANCE YOUR IMMUNE SYSTEM.
+price_preview:
+  pricing:
+  - {}
+price_preview_one:
+- title: Forehead Wrinkles
+  subtitle: 45 MINUTES (PRICE PER UNIT)
+  price: "$12.00"
