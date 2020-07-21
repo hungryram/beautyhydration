@@ -4,11 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: My Profile
 - type: document
   path: data/profile.yaml
   label: Profile
-- type: heading
-  label: My Profile
 - type: heading
   label: My Website
 - type: document
