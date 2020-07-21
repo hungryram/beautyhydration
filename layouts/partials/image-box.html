@@ -1,20 +1,29 @@
 <div class="section">
+    {{ $boxOne := .Site.Data.home.image_boxes.image_box_one }}
+    {{ $boxTwo := .Site.Data.home.image_boxes.image_box_two }}
+    {{ $boxThree := .Site.Data.home.image_boxes.image_box_three }}
     <div class="container">
-        <div class="columns  has-text-centered">
+        <div class="columns has-text-centered">
             <div class="column">
-                <div class="image-box-one" style="background: blue;padding: 30px;">
-                    <h4 class="title is-4">Med Spa</h4>
+                <a href="{{ $boxOne.link }}">
+                <div class="image-box-one" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{ $boxOne.image }})no-repeat center;">
+                    <h4 class="title is-4 has-text-white">{{ $boxOne.title }}</h4>
                 </div>
+                 </a>    
             </div>
             <div class="column">
-                <div class="image-box-two" style="background: blue;padding: 30px;">
-                    <h4 class="title is-4">Med Spa</h4>
+                <a href="{{ $boxTwo.link }}">
+                <div class="image-box-two" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{ $boxTwo.image }})no-repeat center;">
+                    <h4 class="title is-4 has-text-white">{{ $boxTwo.title }}</h4>
                 </div>
+                </a>
             </div>
             <div class="column">
-                <div class="image-box-three" style="background: blue;padding: 30px;">
-                    <h4 class="title is-4">Med Spa</h4>
+                <a href="{{ $boxTwo.link }}">
+                <div class="image-box-three" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{ $boxThree.image }})no-repeat center;">
+                    <h4 class="title is-4 has-text-white">{{ $boxThree.title }}</h4>
                 </div>
+                </a>
             </div>
         </div>
     </div>

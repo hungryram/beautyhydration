@@ -1,39 +1,50 @@
+{{ $priceOne := .Site.Data.home.price_preview_one }}
+{{ $priceTwo := .Site.Data.home.price_preview_two }}
 <div class="section">
     <div class="container">
-        <div class="columns">
+        <div class="columns is-vcentered">
             <div class="column">
-                <div class="home-price-container">
-                    <h2 class="title is-4">Beauty</h2>
-                    <hr>
-                    <div class="columns is-mobile">
-                        <div class="column"><h4 class="subtitle is-4">Forehead Wrinkles</h4></div>
-                        <div class="column"><span>Price</span></div>
+                <div class="home-price-container-one box">
+                    <h2 class="title is-2 has-text-centered">Beauty</h2>
+                    <div class="columns has-text-centered">
+                        <div class="column">
+                            <div class="divider"></div><div class="divider-icon"><i class="fa fa-leaf skin_color"></i></div></i><div class="divider"></div>
+                        </div>
                     </div>
+                    {{ range $priceOne }}
+                    <div class="columns is-mobile" style="border-bottom: 1px dashed #e1e1e1">
+                        <div class="column"><h4 class="title is-5 mb-0">{{ .title }}</h4><h6 class="subtitle is-6 mt-2 is-size-7 has-text-weight-bold">{{ .subtitle }}</h6></div>
+                        <div class="column has-text-right"><span class="price-preview has-text-weight-bold">{{ .price }}</span></div>
+                    </div>
+                    {{ end }}
                 </div>
             </div>
-            <div class="column">
-                <img src="http://beautyhydration.com/wp-content/uploads/2020/01/beauty-hydration-setting.jpg" alt="">
+            <div class="column is-7">
+                <img src="/uploads/cucumber-lady.jpg" alt="Beauty" class="image">
             </div>
         </div>
     </div>
 </div>
-
-
-
 <div class="section">
     <div class="container">
-        <div class="columns">
-            <div class="column">
-                <img src="http://beautyhydration.com/wp-content/uploads/2020/01/beauty-hydration-setting.jpg" alt="">
+        <div class="columns is-vcentered">
+            <div class="column is-7">
+                <img src="/uploads/beauty-hydration-vitamin-drip.jpg" alt="Hydration" class="image">
             </div>
             <div class="column">
-                <div class="home-price-container">
-                    <h2 class="title is-4">Beauty</h2>
-                    <hr>
-                    <div class="columns is-mobile">
-                        <div class="column"><h4 class="subtitle is-4">Forehead Wrinkles</h4></div>
-                        <div class="column"><span>Price</span></div>
+                <div class="home-price-container-two box">
+                    <h2 class="title is-2 has-text-centered">Beauty</h2>
+                    <div class="columns has-text-centered">
+                        <div class="column">
+                            <div class="divider"></div><div class="divider-icon"><i class="fa fa-leaf skin_color"></i></div></i><div class="divider"></div>
+                        </div>
                     </div>
+                    {{ range $priceTwo }}
+                    <div class="columns is-mobile" style="border-bottom: 1px dashed #e1e1e1">
+                        <div class="column"><h4 class="title is-5 mb-0">{{ .title }}</h4><h6 class="subtitle is-6 mt-2 is-size-7 has-text-weight-bold">{{ .subtitle }}</h6></div>
+                        <div class="column has-text-right"><span class="price-preview has-text-weight-bold">{{ .price }}</span></div>
+                    </div>
+                    {{ end }}
                 </div>
             </div>
         </div>

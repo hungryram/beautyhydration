@@ -1,11 +1,17 @@
+{{ $slogan := .Site.Data.home.slogan }}
 <div class="section">
     <div class="container">
         <div class="columns">
             <div class="column is-half is-offset-one-quarter has-text-centered">
                 <div class="slogan-text">
-                    <h2 class="title is-2">My Slogan</h2>
-                    <h4>Come experience the secrets of relaxation</h4>
+                    <h2 class="title is-2">{{ $slogan.heading }}</h2>
+                    <h4>{{ $slogan.body_text }}</h4>
                 </div>
+            </div>
+        </div>
+        <div class="columns has-text-centered">
+            <div class="column">
+                <div class="divider" style="width: 150px;"></div><div class="divider-icon"><i class="fa fa-leaf skin_color"></i></div></i><div class="divider" style="width: 150px;"></div>
             </div>
         </div>
     </div>

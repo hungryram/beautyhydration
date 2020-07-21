@@ -1,11 +1,12 @@
-<div class="footer-image-wrapper" style="background: gray;paddingL 100px 0;">
+{{ $footerImage := .Site.Data.home.top_footer_section }}
+<div class="footer-image-wrapper" style="background:url({{ $footerImage.image }}) no-repeat center;background-size:cover;">
     <div class="section">
         <div class="container">
             <div class="columns">
                 <div class="column has-text-centered">
-                    <div class="footer-image-text">
-                        <h2 class="title is-4">The Experience</h2>
-                        <p>lorem</p>
+                    <div class="footer-image-text content">
+                        <h2 class="title is-2 has-text-white">{{ $footerImage.slogan }}</h2>
+                        <p class="has-text-white">{{ $footerImage.body_text }}</p>
                     </div>
                 </div>
             </div>

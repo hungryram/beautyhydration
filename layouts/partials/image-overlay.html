@@ -1,16 +1,18 @@
+{{  $imageOverlay := .Site.Data.home.image_overlay }}
 <div class="section">
     <div class="container">
-        <div class="columns is-vcentered">
-            <div class="column">
+        <div class="columns is-vcentered is-gapless">
+            <div class="column is-8">
                 <div class="image-overlay">
-                    <img src="http://beautyhydration.com/wp-content/uploads/2020/01/beauty-hydration-setting.jpg" alt="">
+                    <img src="{{ $imageOverlay.image }}" alt="" class="image">
                 </div>
             </div>
             <div class="column">
-                <div class="image-overlay-text" style="background: #FFCC00;padding: 50px">
-                    <h2 class="title is-4">Experienced in Botox Injection and IV hydration</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta reprehenderit officiis alias nulla assumenda quisquam eligendi! Rem quas, culpa obcaecati ut earum, incidunt magnam quidem excepturi fugiat nulla dicta corporis.</p>
-                    <a href="/">Discover</a>
+                <div class="image-overlay-text">
+                    <h2 class="title is-2">{{ $imageOverlay.heading }}</h2>
+                    <p>{{ $imageOverlay.body_text }}</p>
+                    <br>
+                    <a href="{{ $imageOverlay.link }}" class="anchor-image-overlay"{{ if $imageOverlay.open_in_a_new_tab }}target="_blank"{{ end }}>{{ $imageOverlay.link_label }}</a>
                 </div>
             </div>
         </div>

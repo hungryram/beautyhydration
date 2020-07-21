@@ -1,10 +1,11 @@
-<div class="image-cta-wrapper" style="background: url(http://beautyhydration.com/wp-content/uploads/2020/01/beauty-hydration-setting.jpg) no-repeat center;background-size: cover;padding: 100px 0;">
+{{ $imageCta := .Site.Data.home.image_call_to_action }}
+<div class="image-cta-wrapper" style="background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url({{ $imageCta.image }}) no-repeat center;background-size: cover;padding: 100px 0;">
     <div class="section">
         <div class="container">
-            <div class="columns">
+            <div class="columns has-text-white has-text-centered">
                 <div class="column is-half is-offset-one-quarter">
-                    <h2 class="title is-4">Are you sick?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione ullam numquam dicta, natus esse dolorum voluptatem, ducimus fugiat totam ut tenetur iure obcaecati inventore consectetur accusantium minima perspiciatis optio.</p>
+                    <h2 class="title is-2 has-text-white">{{ $imageCta.heading }}</h2>
+                    <p>{{ $imageCta.body_text }}</p>
                 </div>
             </div>
         </div>
