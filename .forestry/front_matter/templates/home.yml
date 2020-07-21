@@ -76,5 +76,43 @@ fields:
       label: Image
     label: Image Box Three
   label: Image Boxes
+- name: welcome_text
+  type: field_group
+  config: {}
+  fields:
+  - name: main_title
+    type: text
+    config:
+      required: false
+    label: Main Title
+  - name: first_intro_title
+    type: text
+    config:
+      required: false
+    label: First Intro Title
+  - name: first_introduction
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: First Introduction
+  - name: second_intro_title
+    type: text
+    config:
+      required: false
+    label: Second Intro Title
+  - name: second_introduction
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Second Introduction
+  label: Welcome Text
 pages:
 - data/home.yaml
