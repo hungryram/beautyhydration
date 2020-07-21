@@ -1,4 +1,89 @@
 ---
 label: Design
 hide_body: true
-fields: []
+fields:
+- name: logo_and_title
+  type: field_group
+  config: {}
+  fields:
+  - name: logo
+    type: file
+    config:
+      maxSize: 64
+    label: Logo
+  - name: company_title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: favicon
+    type: file
+    config:
+      maxSize: 64
+    label: Favicon
+  label: Logo and Title
+- name: home_slideshow
+  type: field_group
+  config: {}
+  fields:
+  - name: slideshow
+    type: image_gallery
+    config: {}
+    label: Slideshow
+  - name: slideshow_title
+    type: text
+    config:
+      required: false
+    label: Slideshow Title
+  - name: slideshow_subtitle
+    type: text
+    config:
+      required: false
+    label: Slideshow Subtitle
+  label: Home Slideshow
+- name: banner
+  type: field_group
+  config: {}
+  fields:
+  - name: banner_image
+    type: file
+    config:
+      maxSize: 64
+    label: Banner Image
+  label: Banner
+- name: colors
+  type: field_group
+  config: {}
+  fields:
+  - name: enable_black_menu_items
+    type: boolean
+    label: Enable Black menu Items
+  - name: header_background_color
+    type: color
+    label: Header Background Color
+    config:
+      required: false
+      color_format: Hex
+  - name: page_background
+    type: color
+    label: Page Title Background
+    config:
+      required: false
+      color_format: Hex
+  label: Colors
+- name: footer
+  type: field_group
+  config: {}
+  fields:
+  - name: enable_black_text
+    type: boolean
+    label: Enable Black Text
+  - name: footer_background_color
+    type: color
+    config:
+      required: false
+      color_format: Hex
+    label: Footer Background Color
+  label: Footer
+pages:
+- data/design.yaml
