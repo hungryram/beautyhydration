@@ -242,5 +242,29 @@ fields:
     max: 
     labelField: 
   label: Price Preview Two
+- name: top_footer_section
+  type: field_group
+  config: {}
+  fields:
+  - name: slogan
+    type: text
+    config:
+      required: false
+    label: Slogan
+  - name: body_text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body Text
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  label: Top Footer Section
 pages:
 - data/home.yaml
