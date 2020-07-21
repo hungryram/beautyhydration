@@ -194,5 +194,23 @@ fields:
         format: markdown
     label: Body Text
   label: Image Call to Action
+- name: price_preview
+  type: field_group
+  config: {}
+  fields:
+  - name: pricing
+    type: field_group_list
+    fields:
+    - name: heading
+      type: text
+      config:
+        required: false
+      label: Heading
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Pricing
+  label: Price Preview
 pages:
 - data/home.yaml
