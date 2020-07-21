@@ -151,5 +151,24 @@ fields:
     type: boolean
     label: Open in a new tab
   label: Image Overlay
+- name: slogan
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: body_text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body Text
+  label: Slogan
 pages:
 - data/home.yaml
