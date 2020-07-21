@@ -75,15 +75,24 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: enable_black_text
-    type: boolean
-    label: Enable Black Text
   - name: footer_background_color
     type: color
     config:
       required: false
       color_format: Hex
     label: Footer Background Color
+  - name: enable_black_text
+    type: boolean
+    label: Enable Black Text
+  - name: footer_bio
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Footer Bio
   label: Footer
 pages:
 - data/design.yaml
