@@ -194,23 +194,29 @@ fields:
         format: markdown
     label: Body Text
   label: Image Call to Action
-- name: price_preview
-  type: field_group
-  config: {}
+- name: price_preview_one
+  type: field_group_list
   fields:
-  - name: pricing
-    type: field_group_list
-    fields:
-    - name: heading
-      type: text
-      config:
-        required: false
-      label: Heading
+  - name: title
+    type: text
     config:
-      min: 
-      max: 
-      labelField: 
-    label: Pricing
-  label: Price Preview
+      required: false
+    label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: price
+    type: text
+    config:
+      required: false
+    label: Price
+    description: include the dollar symbol.
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Price Preview One
 pages:
 - data/home.yaml
