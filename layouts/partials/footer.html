@@ -103,7 +103,6 @@
         </script>
         <script>
             $(document).ready(function() {
-            
             // Check for click events on the navbar burger icon
                 $(".navbar-burger").click(function() {
                 
@@ -116,10 +115,35 @@
                 $('.sub-menu').click(function(){
                 $('.sub', this).toggleClass('sub-active-menu');
                  });
+
+
+                 var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop){
+       $('header.navbar').addClass("animate__slideOutUp");
+   } else {
+    $('header.navbar').addClass("animate__fadeInDown");
+    $('header.navbar').removeClass("animate__slideOutUp");
+    $('.onscroll').removeClass("scroll-logo");
+    $('.main-logo').addClass("scroll-logo");
+
+   }
+
+   $(window).scroll(function () {
+    if ($(this).scrollTop()  <= 0 ){
+      $('header.navbar').removeClass("animate__fadeInDown");
+    $('.main-logo').removeClass("scroll-logo");
+    $('.onscroll').addClass("scroll-logo");
+
+    }
+});
+
+   lastScrollTop = st;
+});
             });
+
+
             </script>
-            <script>
-              $('.hero-title').hide().fadeIn(800).animate({'letter-spacing': '15px'}, 2000);
-                  </script>
   </body>
 </html>

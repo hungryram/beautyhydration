@@ -1,3 +1,5 @@
+
+
 img.image {
     border-radius: 3px;
 }
@@ -20,7 +22,7 @@ i.fa-leaf {
 }
 
 div.section {
-    padding: 5rem 1.5rem;
+    padding: 3rem 1.5rem;
 }
 /* DEFAULT LIST.HTML */
 
@@ -74,10 +76,6 @@ div#share-buttons i {
 
 /* SLIDESHOW */
 
-.home-slide.slick-initialized.slick-slider {
-    top: -100px;
-}
-
 /* LISTING CAROUSEL */
 
 .slick-prev, .slick-next {
@@ -98,25 +96,6 @@ div#share-buttons i {
     color: #007bb6!important;
 }      
 
-.card-footer-item i,
-.listing-address i {
-    margin-right: 8px;
-}
-
-.listing-bg:hover {
-    transform: scale(1.1);
-    overflow: hidden;
-    transition: all .8s ease;
-}
-
-.listing-bg {
-    transition: all .8s ease;
-
-}
-
-.listing-image-container {
-    overflow: hidden;
-}
 
 span.status {
     background: #00AFFF;
@@ -199,7 +178,7 @@ body h3.title,
 body h4.title,
 body h5.title,
 body h6.title {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
 }
 
@@ -209,7 +188,7 @@ body h3.subtitle,
 body h4.subtitle,
 body h5.subtitle,
 body h6.subtitle {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .fa-facebook-f {
@@ -239,7 +218,7 @@ i.fab.fa-instagram {
 p,
 li,
 a {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
 }
 
@@ -262,16 +241,20 @@ p {
 }
 
 a.hero-button {
-    padding: 20px 50px!important;
+    padding: 30px 50px!important;
     font-size: 1rem;
     border-radius: 0;
     background-color: #FFCC00;
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 1.5px;
+}
 
+
+
+a.hero-button:hover {
+    background: white;
 }
 
 /* PAGINATION */
@@ -418,7 +401,7 @@ div.right-nav img {
 }
 
 a.booking {
-    border: 1px solid white;
+    border: 2px solid white;
     padding: 10px 20px;
     border-radius: 3px;
 }
@@ -482,13 +465,39 @@ a.booking {
 }
 
 /* ALL SCREEN SIZE MENU */
+header.navbar {
+    position: fixed;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+header.animate__fadeInDown {
+    background-color: #fff!important;
+    transition: all .2s ease-out;
+}
+
+header.animate__fadeInDown > .container > .navbar-brand > #navbarMenuHeroC > div > ul > li > a.nav-item,
+header.animate__fadeInDown > .container > .right-nav > ul > li > a
+ {
+    color: black!important;
+}
+
+header.animate__fadeInDown > .container > .right-nav > ul > li > a.booking {
+    border: 2px solid #00aeef;
+    color: #00aeef!important;
+}
+
+.scroll-logo {
+    display: none;
+}
+
 
 a.navbar-item img {
-    max-height: 4rem;
+    max-height: 6rem;
 }
 
 a.nav-item {
-    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
@@ -529,25 +538,29 @@ div.hero-body {
 }
 
 .hero-body h1.hero-title {
-    color: #FFF;
+    color: rgb(0, 0, 139);
     line-height: 2;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    letter-spacing: 8px;
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 67px;
 }
 
-.hero-body h2 {
-    color: #cbcbcb;
-    font-family: 'Montserrat', sans-serif;
+.hero-body h2.hero-subtitle {
+    color: rgb(0, 0, 139);
+    font-size: 2rem;
+    font-weight: 200;
 }
 
 @media screen and (max-width: 768px){
     .hero-body h1.hero-title {
-        font-size: 28px;
+        font-size: 3rem;
     }
 
     .hero-body h2.subtitle {
         font-size: 18px;
+    }
+
+    a.hero-button {
+        font-size: .5rem;
     }
 }
 
@@ -556,8 +569,21 @@ div.hero-body {
 .image-box-one,
 .image-box-two,
 .image-box-three {
-    padding: 150px;
+    padding: 150px 20px;
     border-radius: 3px;
+    transition: all .8s ease;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-box-one:hover,
+.image-box-two:hover,
+.image-box-three:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: all .8s ease;
 }
 
 /* IMAGE OVERLAY HOME */
@@ -565,8 +591,7 @@ div.hero-body {
 div.image-overlay-text {
     background: #FFCC00;
     padding: 61px;
-    position: relative;
-    right: 70px;
+    box-shadow: 4px 6px 20px #b9b9b9;
 }
 
 a.anchor-image-overlay {
@@ -575,6 +600,13 @@ a.anchor-image-overlay {
     color: #5c5c5c;
     transition: color .2s ease;
 
+}
+
+@media screen and (min-width:1087px){
+    div.image-overlay-text {
+        position: relative;
+        right: 70px;
+    }
 }
 
 a.anchor-image-overlay:hover {
@@ -607,7 +639,7 @@ span.price-preview {
 /* FOOTER */
 
 .footer-image-wrapper {
-    padding: 150px 0;
+    padding: 200px 0px;
 }
 
 .footer-links ul li {
