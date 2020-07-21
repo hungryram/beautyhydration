@@ -142,6 +142,11 @@ fields:
     config:
       required: false
     label: Link
+  - name: link_label
+    type: text
+    config:
+      required: false
+    label: Link Label
   - name: open_in_a_new_tab
     type: boolean
     label: Open in a new tab
