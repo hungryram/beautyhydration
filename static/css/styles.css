@@ -1,0 +1,502 @@
+/* DEFAULT LIST.HTML */
+
+button.button {
+    border: 0!important;
+    border-radius: 0;
+    color: #fff;
+    transition: all .2s ease;
+    padding: 0 20px;
+}
+
+address {
+    font-style: normal;
+}
+
+nav.breadcrumb.is-small li a {
+    text-transform: capitalize;
+    color: #7c7c7c;
+}
+
+.button.is-hovered, .button:hover {
+    color: #ccc!important;
+    transition: all .2s ease;
+}
+
+.default-list {
+    padding: 30px;
+}
+
+.default-list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #007bb6;
+}
+
+/* FORMS */
+input.input,
+textarea.textarea {
+    border-radius: 0;
+}
+
+
+
+/* SHARE BUTTONS */
+
+div#share-buttons i {
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* SLIDESHOW */
+
+.home-slide.slick-initialized.slick-slider {
+    top: -100px;
+}
+
+/* LISTING CAROUSEL */
+
+.slick-prev, .slick-next {
+    z-index: 1000;
+}
+
+
+.slick-prev::before {
+    font-family: FontAwesome!important;
+    content:  "\f104"!important;
+    font-size: 28px!important;
+    color: #007bb6!important;
+}  
+.slick-next::before {
+    font-family: FontAwesome!important;
+    content:  "\f105"!important;
+    font-size: 28px!important;
+    color: #007bb6!important;
+}      
+
+.card-footer-item i,
+.listing-address i {
+    margin-right: 8px;
+}
+
+.listing-bg:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: all .8s ease;
+}
+
+.listing-bg {
+    transition: all .8s ease;
+
+}
+
+.listing-image-container {
+    overflow: hidden;
+}
+
+span.status {
+    background: #00AFFF;
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+span.featured {
+    background: #E28429;
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.card-footer-item {
+    font-size: 12px;
+    color: #242429;
+}
+
+.listing-bottom {
+    padding: 1rem;
+}
+
+.listing-bottom ul li {
+    color: #fff;
+}
+
+.list-description {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.listing-address {
+    font-size: 13px;
+}
+
+.list-pricing {
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    padding: 5px 7px;
+}
+
+a.main-btn {
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 0;
+    border: 0;
+}
+
+body {
+    background: #fbfbfb;
+    color: #303030;
+    height: 100%;
+}
+
+main {
+    padding: 50px 0px;
+}
+
+body {
+    overflow: hidden;
+}
+
+body h1.title,
+body h2.title,
+body h3.title,
+body h4.title,
+body h5.title,
+body h6.title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+body h1.subtitle,
+body h2.subtitle,
+body h3.subtitle,
+body h4.subtitle,
+body h5.subtitle,
+body h6.subtitle {
+    font-family: 'Raleway', sans-serif;
+}
+
+.fa-facebook-f {
+    color: #506dab!important;
+}
+
+i.fab.fa-instagram {
+    color: #517fa4!important;
+}
+
+.fa-linkedin-in {
+    color: #007bb6!important;
+}
+
+.fa-pinterest-p {
+    color: #cb2027!important;
+}
+
+.fa-twitter {
+    color: #00aced!important;
+}
+
+.fa-youtube {
+    color: #be0303;
+}
+
+p,
+li,
+a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    transition: .2s;
+
+}
+
+div a:hover {
+    color: #a2a2a2;
+    transition: .2s;
+}
+
+.box a:hover {
+    color: #a2a2a2;
+}
+
+div.box {
+    box-shadow: 0 2px 3px rgba(148, 148, 148, 0.15), 0 0 0 1px rgba(250, 0, 0, 0)!important;
+    border-radius: 0px;
+    transition: all .4s ease;
+}
+
+div.box:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,.15)!important;
+    transition: all .4s ease;
+}
+
+p {
+    line-height: 2;
+}
+
+/* HOME SECTIONS */
+
+.home-featured-sections .title {
+    line-height: 2;
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+a.button.hero-button {
+    padding: 15px 30px!important;
+    font-size: 1rem;
+    border-radius: 0;
+}
+
+/* PAGINATION */
+
+.pagination li a {
+    transition: all .3s ease;
+    color: #00aeff;
+}
+
+.pagination li:hover a {
+    background: #DCE0E0;
+    transition: all .3s ease;
+}
+
+ul.pagination {
+    justify-content: center;
+}
+
+li.page-item {
+    padding: 2px;
+    font-size: 14px;
+}
+
+.pagination-next,
+.pagination-previous {
+    background: white;
+    border-color: #fff!important;
+}
+
+li.active a {
+    background: #00aeff;
+    color: #ffffff;
+}
+
+.disabled {
+    display: none;
+}
+
+/* TOPBAR */
+
+.top-bar {
+    text-align: right;
+    padding: 5px 15px;
+}
+
+.top-bar i {
+    margin: 0 8px;
+}
+
+.top-bar a {
+    font-size: 14px;
+}
+
+/* NAV */
+@media screen and (max-width: 1087px){
+
+    span.navbar-burger {
+        transition: all .2s ease;
+        margin-top: 10px;
+    }
+    
+    .navbar-menu.is-active {
+        display: block;
+        transition: all .3s ease;
+        position: absolute;
+        right: 0;
+        top: -20px;
+        height: 105vh;
+    }
+
+    .navbar-burger {
+        z-index: 1000;
+    }
+    
+    div.navbar-menu {
+        display: block;
+        position: absolute;
+        right: -1000px;
+        transition: all .3s ease;
+        padding: 40px;
+        height: 105vh;
+        top: -20px;
+    }
+
+    .head-nav li a.nav-item,
+    .head-nav a.parent-drop {
+        color: #000!important;
+    }
+
+    div#navbarMenuHeroC ul:first-child {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    div#navbarMenuHeroC {
+        padding: 40px 60px 0 60px;
+        position: fixed;
+        overflow-y: auto;
+    }
+
+    ul.head-nav li {
+        padding: 10px;
+    }
+
+    .sub.sub-active-menu {
+        max-height: 600px;
+        transition: max-height .3s ease;
+        background: #7c7c7c;
+        /* padding: 10px;
+        margin-top: 15px; */
+    }
+    
+    .sub {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .2s ease;
+    }
+}
+
+
+
+@media screen and (min-width:1087px) {
+    .head-nav li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    ul.sub {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .2s ease;
+        width: 250px;
+    }
+
+    .sub-menu:hover ul.sub {
+        visibility: visible;
+        background: #fff;
+        margin-top: 38px;
+        opacity: 1;
+        transition: all .2s ease;
+    }
+
+    .dropdown-i {
+        transition: all .2s ease;
+        padding: 0 5px;
+    }
+
+    .sub-menu:hover .dropdown-i {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg );
+        transition: all .4s ease;
+    }
+
+    .sub li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+        border-top: 1px solid rgba(0,0,0,.15);
+        transition: all .3s ease;
+    }
+
+    .sub li:hover {
+        padding-left: 20px;
+        transition: all .3s ease;
+        background: #e8e8e8;
+    }
+
+    .head-nav a.nav-item,
+    .head-nav a.parent-drop {
+        padding: 40px 0;
+        color: white;
+    }
+}
+
+/* ALL SCREEN SIZE MENU */
+header.navbar {
+    padding: 10px 0;
+    box-shadow: 0px 4px 20px 0px #1a1a1a;
+}
+
+a.navbar-item img {
+    max-height: 4rem;
+}
+
+.navbar-end {
+    align-items: center!important;
+}
+
+
+.sub-menu:hover .sub-active-menu {
+    max-height: 600px;
+    transition: max-height .3s ease;
+}
+
+.navbar-brand h1 {
+    font-size: 1.3em;
+    color: white;
+}
+
+/* HERO CONTAINER  */
+
+section.hero__container {
+    background-size: cover;
+}
+
+.hero-content {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+div.hero-body {
+    left: 0;
+    right:0;
+    top: 40%;
+}
+
+.hero-body h1 {
+    color: #fff;
+    line-height: 2;
+}
+
+.hero-body h2 {
+    color: #cbcbcb;
+}
+
+@media screen and (max-width: 768px){
+    .hero-body h1.hero-title {
+        font-size: 28px;
+    }
+
+    .hero-body h2.subtitle {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,48 @@
+<section class="hero is-fullheight hero__container">
+    <!-- Hero head: will stick at the top -->
+{{ partial "navbar.html" . }}
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body" style="position: absolute; z-index:1;">
+        {{ with .Site.Data.design.main_image.align_hero_text }}
+          <div class="container {{ . }} animate__animated animate__slideInDown">
+            {{end}}
+              <h1 class="hero-title title is-1">{{ .Site.Data.design.main_image.hero_title }}</h1>
+              <h2 class="subtitle">{{ .Site.Data.design.main_image.hero_subtitle }}</h2>
+  
+
+              
+          </div>
+      </div>
+<div class="home-slide">
+{{ range .Site.Data.design.slideshow.slideshow_home }}
+    <div style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url({{ . }});height:100vh;background-size:cover;background-position:center">
+    </div>
+{{ end }}
+  </div>
+
+  
+     <!-- Hero footer: will stick at the bottom -->
+{{ if .Site.Data.idx.enable_home_quick_search }}
+  <div class="hero-foot">
+      <div class="section">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <script type="text/javascript" src="https://www.idxhome.com/site/listing/search/widget/{{ $.Site.Data.idx.idx_id }}?style=horizontal"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+{{ end }}
+
+</section>
+{{ if .Site.Data.idx.enable_home_quick_search }}
+
+<div class="section" id="mobile-qs">
+  <div class="container">
+    <h1 class="subtitle is-4">Quick Search</h1>
+  <script type="text/javascript" src="https://www.idxhome.com/site/listing/search/widget/{{ $.Site.Data.idx.idx_id }}?style=horizontal"></script>
+</div>
+</div>
+{{ end }}

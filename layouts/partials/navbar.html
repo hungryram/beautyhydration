@@ -1,0 +1,58 @@
+<div class="hero-head">
+    <div class="top-bar" style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.colors.top_bar_background) }}">
+      <div class="container">
+        <p>{{ if .Site.Data.profile.primary_contact.email }}<a href="mailto:{{ .Site.Data.profile.primary_contact.email }}" {{ if $.Site.Data.design.colors.top_bar_enable_black_text_color }}style="color: black"{{ else }}style="color: #fff"{{end}}><i class="far fa-envelope"></i>{{ .Site.Data.profile.primary_contact.email }}</a>{{ end }}
+          {{ if .Site.Data.profile.primary_contact.mobile_phone }}<a href="tel:{{ .Site.Data.profile.primary_contact.mobile_phone }}" {{ if $.Site.Data.design.colors.top_bar_enable_black_text_color }}style="color: black"{{ else }}style="color: #fff"{{end}}><i class="fas fa-mobile-alt"></i> {{ .Site.Data.profile.primary_contact.mobile_phone }}</a>{{ end }}
+        </p>
+      </div>
+    </div>
+  
+      <header class="navbar"style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.colors.header_background_color) }}">
+  
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                  {{ with .Site.Data.design.logo_or_title.upload_logo}}
+              <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}">
+                  {{ else }}
+              <h1>{{ .Site.Data.design.logo_or_title.title }}</h1>
+                  {{ end }}
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+              <span {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #ccc"{{end}}></span>
+              <span {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #ccc"{{end}}></span>
+              <span {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #ccc"{{end}}></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu" {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
+            <div class="navbar-end">
+              <ul class="head-nav">
+                  {{ $currentPage := . }}
+                  {{ range .Site.Menus.main }}
+                      {{ if .HasChildren }}
+                    <li class="sub-menu{{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
+                    <a href="javascript:;" class="parent-drop" {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
+                        {{ .Pre }}
+                        <span>{{ .Name }}</span>
+                        <i class="fas fa-caret-down dropdown-i"></i>
+                    </a>
+                    <ul class="sub" style="background: #fff;">
+                        {{ range .Children }}
+                        <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}" style="color:black">{{ .Name }}</a> </li>
+                        {{ end }}
+                    </ul>
+                  {{else}}
+                    <li>
+                    <a href="{{.URL}}" class="nav-item"{{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
+                        {{ .Pre }}
+                        <span>{{ .Name }}</span>
+                    </a>
+                  {{end}}
+                  </li>
+                  {{end}}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
