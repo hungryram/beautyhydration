@@ -213,6 +213,11 @@ fields:
       required: false
     label: Price
     description: include the dollar symbol.
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
   config:
     min: 
     max: 
@@ -237,6 +242,11 @@ fields:
       required: false
     label: Price
     description: Include the dollar symbol.
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
   config:
     min: 
     max: 
