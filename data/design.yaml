@@ -1,0 +1,19 @@
+---
+logo_and_title:
+  logo: ''
+  company_title: ''
+  favicon: ''
+home_slideshow:
+  slideshow:
+  - "/uploads/vitamin-b12-shots.jpg"
+  slideshow_title: Beauty Hydration
+  slideshow_subtitle: Beauty & Wellness at your service
+banner:
+  banner_image: ''
+colors:
+  enable_black_menu_items: false
+  header_background_color: ''
+  page_background: ''
+footer:
+  enable_black_text: false
+  footer_background_color: "#222222"
