@@ -1,0 +1,17 @@
+---
+image_boxes:
+  image_box_one:
+    title: Med Spa
+    link: "/about"
+    image: "/uploads/standard-king-ocean-view-ca1b0331.jpg"
+    open_in_a_new_tab: false
+  image_box_two:
+    title: ''
+    link: ''
+    open_in_a_new_tab: false
+    image: ''
+  image_box_three:
+    title: ''
+    link: ''
+    open_in_a_new_tab: false
+    image: ''

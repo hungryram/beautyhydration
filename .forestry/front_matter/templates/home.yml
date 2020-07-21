@@ -76,3 +76,5 @@ fields:
       label: Image
     label: Image Box Three
   label: Image Boxes
+pages:
+- data/home.yaml
