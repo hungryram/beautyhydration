@@ -2,10 +2,44 @@ baseURL = "https://beautyhydration.netlify.app/"
 languageCode = "en-us"
 title = "Beauty Hydration"
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 5
+name = "Refresh"
+parent = "Wellness"
+url = "/refresh"
+weight = 1
+[[menu.main]]
+name = "Wellness"
+parent = "IV Hydration"
+weight = 1
+[[menu.main]]
+name = "IV Hydration"
+weight = 4
+[[menu.main]]
+name = "Chin Augmentation"
+parent = "Fillers"
+url = "/chin-augmentation"
+weight = 3
+[[menu.main]]
+name = "Cheek Augmentation"
+parent = "Fillers"
+url = "/cheek-augmentation"
+weight = 2
+[[menu.main]]
+name = "Lip Augmentation"
+parent = "Fillers"
+url = "/lip-augmentation"
+weight = 1
+[[menu.main]]
+name = "Fillers"
+parent = "Beauty"
+weight = 1
+[[menu.main]]
+name = "Beauty"
+weight = 3
 [[menu.main]]
 name = "Contact"
 url = "/contact"
-weight = 15
+weight = 2
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
