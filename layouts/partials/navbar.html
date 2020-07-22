@@ -1,4 +1,5 @@
-        <header class="navbar animate__animated" style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.colors.header_background_color) }}">
+{{ $blackMenu := $.Site.Data.design.colors.enable_black_menu_items }}
+<header class="navbar animate__animated" style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.colors.header_background_color) }}">
   
         <div class="container">
           <div class="navbar-brand">
@@ -11,30 +12,39 @@
                   {{ end }}
             </a>
             <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-              <span {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #ccc"{{end}}></span>
-              <span {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #ccc"{{end}}></span>
-              <span {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #ccc"{{end}}></span>
+              <span {{ if not $.IsHome }}{{ if $blackMenu }}style="color: black"{{ end }}{{ else }}style="color: #ccc"{{end}}></span>
+              <span {{ if not $.IsHome }}{{ if $blackMenu }}style="color: black"{{ end }}{{ else }}style="color: #ccc"{{end}}></span>
+              <span {{ if not $.IsHome }}{{ if $blackMenu }}style="color: black"{{ end }}{{ else }}style="color: #ccc"{{end}}></span>
             </span>
-            <div id="navbarMenuHeroC" class="navbar-menu" {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
+            <div id="navbarMenuHeroC" class="navbar-menu" {{ if not $.IsHome }}{{ if $blackMenu }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
               <div class="navbar-end">
                 <ul class="head-nav">
                     {{ $currentPage := . }}
                     {{ range .Site.Menus.main }}
-                        {{ if .HasChildren }}
+                    {{ if .HasChildren }}
                       <li class="sub-menu{{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
-                      <a href="javascript:;" class="parent-drop" {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
+                      <a href="javascript:;" class="parent-drop" {{ if not $.IsHome }}{{ if $blackMenu }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
                           {{ .Pre }}
                           <span>{{ .Name }}</span>
                           <i class="fas fa-caret-down dropdown-i"></i>
                       </a>
-                      <ul class="sub" style="background: #fff;">
+                      <ul class="sub">
                           {{ range .Children }}
-                          <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}" style="color:black">{{ .Name }}</a> </li>
-                          {{ end }}
+                            <li class="subsub-menu">
+                              <a href="{{ if .HasChildren }}javascript:;{{ else }}{{ .URL }}{{ end }}" {{ if .HasChildren }}class="parent-subsub"{{end}} style="color:black">{{ .Name }}</a>
+                                {{ if .HasChildren }}
+                                <ul class="subsub" style="background: #fff;">
+                                  {{ range .Children }}
+                                  <li><a href="{{ .URL }}" style="display: block;">{{ .Name }}</a></li>
+                                  {{ end }}
+                                </ul>
+                                {{ end }}
+                            </li>
+                            {{ end }}
                       </ul>
                     {{else}}
                       <li>
-                      <a href="{{.URL}}" class="nav-item"{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ else }}style="color: #fff"{{end}}>
+                      <a href="{{.URL}}" class="nav-item"{{ if $blackMenu }}style="color: black"{{ else }}style="color: #fff"{{end}}>
                           {{ .Pre }}
                           <span>{{ .Name }}</span>
                       </a>
@@ -47,8 +57,8 @@
             </div>
             <div class="right-nav">
               <ul>
-                <li><a href="https://fhlny.myaestheticrecord.com/login" {{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ else }}style="color: #fff"{{end}}>Login/Register</a></li>
-                <li><a href="https://fhlny.myaestheticrecord.com/book/appointments" {{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ else }}style="color: #fff"{{end}} class="booking" target="_blank">Book Now</a></li>
+                <li><a href="https://fhlny.myaestheticrecord.com/login" {{ if $blackMenu }}style="color: black"{{ else }}style="color: #fff"{{end}}>Login/Register</a></li>
+                <li><a href="https://fhlny.myaestheticrecord.com/book/appointments" {{ if $blackMenu }}style="color: black"{{ else }}style="color: #fff"{{end}} class="booking" target="_blank">Book Now</a></li>
               </ul>
             </div>
           </div>

@@ -1,4 +1,6 @@
-
+div.mt-6 {
+    margin-top: 10rem!important;
+}
 
 img.image {
     border-radius: 3px;
@@ -294,6 +296,7 @@ li.active a {
 }
 
 /* NAV */
+
 @media screen and (max-width: 1087px){
 
     .right-nav {
@@ -410,7 +413,7 @@ a.booking {
 
     .head-nav li {
         display: inline-block;
-        padding: 0 10px;
+        /* padding: 0 10px; */
     }
 
     ul.sub {
@@ -421,13 +424,53 @@ a.booking {
         width: 250px;
     }
 
+
     .sub-menu:hover ul.sub {
         visibility: visible;
         background: #fff;
-        margin-top: 38px;
+        margin-top: 15px;
         opacity: 1;
         transition: all .2s ease;
     }
+
+
+
+    /* SUBSUB */
+
+    a.parent-subsub {
+        display: block;
+    }
+
+    ul.subsub {
+        position: absolute;
+        display: none;
+        transition: all .2s ease;
+        left: 251px;
+        top: 0;
+        width: 250px;
+    }
+
+    .subsub-menu:hover ul.subsub {
+        display: block;
+        background: #fff;
+        transition: all 2s ease;
+    }
+
+    .subsub-menu:hover ul.subsub {
+        visibility: visible;
+        background: #fff;
+        /* SUBSUB margin-top: 38px; */
+        opacity: 1;
+        transition: all 2s ease;
+        z-index: 10000;
+
+    }
+
+    li.subsub-menu a {
+        padding: 10px;
+    }
+
+    /* END SUBSUB */
 
     .dropdown-i {
         transition: all .2s ease;
@@ -444,22 +487,23 @@ a.booking {
     }
 
     .sub li {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
         display: block;
         border-top: 1px solid rgba(0,0,0,.15);
-        transition: all .3s ease;
+        transition: all 3s ease;
+        word-break: break-word;
     }
 
-    .sub li:hover {
+    /* .sub li:hover {
         padding-left: 20px;
         transition: all .3s ease;
         background: #e8e8e8;
-    }
+    } */
 
     .head-nav a.nav-item,
     .head-nav a.parent-drop {
-        padding: 40px 0;
+        /* padding: 40px 0; */
         color: white;
     }
 }
