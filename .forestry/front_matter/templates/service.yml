@@ -68,3 +68,5 @@ fields:
     max: 
     labelField: 
   label: List of Prices
+pages:
+- content/services/cheek-augmentation.md
