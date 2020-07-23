@@ -5,6 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
+  label: Services
+- type: document
+  path: content/services
+  label: Add/View Services
+  match: "**/*"
+- type: heading
   label: My Profile
 - type: document
   path: data/profile.yaml
