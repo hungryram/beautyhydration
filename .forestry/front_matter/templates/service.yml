@@ -49,3 +49,5 @@ fields:
   config:
     required: false
   label: Price
+pages:
+- content/lip-augmentation.md
