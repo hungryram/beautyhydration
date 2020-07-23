@@ -39,18 +39,32 @@ fields:
     max: 
     labelField: 
   label: Service List
-- name: price_heading
+- name: pricing_title
   type: text
   config:
     required: false
-  label: Price Heading
-- name: price_subtitle
-  type: text
+  label: Pricing Title
+- name: list_of_prices
+  type: field_group_list
+  fields:
+  - name: service_name
+    type: text
+    config:
+      required: false
+    label: Service Name
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: price
+    type: text
+    config:
+      required: false
+    label: Price
+    description: Include the dollar sign.
   config:
-    required: false
-  label: Price Subtitle
-- name: price
-  type: text
-  config:
-    required: false
-  label: Price
+    min: 
+    max: 
+    labelField: 
+  label: List of Prices
