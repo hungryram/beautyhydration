@@ -101,6 +101,10 @@
             window.requestAnimationFrame(updateLax)
           }
 
+          lax.setup({
+            breakpoints: { small: 700, large: 1080 }
+        })
+
           // COLORS
           // SECONDARY BUTTON
           document.querySelectorAll(".secondary-btn").forEach(function(el) {
