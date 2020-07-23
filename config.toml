@@ -2,6 +2,10 @@ baseURL = "https://beautyhydration.netlify.app/"
 languageCode = "en-us"
 title = "Beauty Hydration"
 [[menu.main]]
+name = "Botox"
+parent = "Beauty"
+weight = 2
+[[menu.main]]
 name = "Crows Feet"
 parent = "Botox"
 url = "/crows-feet"
@@ -11,10 +15,6 @@ name = "Angry Lines"
 parent = "Botox"
 url = "/angry-lines"
 weight = 1
-[[menu.main]]
-name = "Botox"
-parent = "Beauty"
-weight = 2
 [[menu.main]]
 name = "About"
 parent = "Contact"
@@ -30,27 +30,12 @@ name = "Wellness"
 parent = "IV Hydration"
 weight = 1
 [[menu.main]]
-name = "IV Hydration"
-weight = 4
-[[menu.main]]
-name = "Chin Augmentation"
-parent = "Fillers"
-url = "/chin-augmentation"
-weight = 3
-[[menu.main]]
-name = "Cheek Augmentation"
-parent = "Fillers"
-url = "/cheek-augmentation"
-weight = 2
-[[menu.main]]
-name = "Lip Augmentation"
-parent = "Fillers"
-url = "/lip-augmentation"
-weight = 1
-[[menu.main]]
 name = "Fillers"
 parent = "Beauty"
 weight = 1
+[[menu.main]]
+name = "IV Hydration"
+weight = 4
 [[menu.main]]
 name = "Beauty"
 weight = 3

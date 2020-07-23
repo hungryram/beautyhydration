@@ -2,6 +2,9 @@
 banner_image = "/uploads/cheek-fillers-woman.jpg"
 pricing_title = "Cheek Fillers Price"
 title = "Cheek Augmentation"
+[menu.main]
+parent = "Fillers"
+weight = 2
 [[list_of_prices]]
 price = "$1,000.00"
 service_name = "Cheek Fillers"

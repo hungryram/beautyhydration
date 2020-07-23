@@ -2,6 +2,9 @@
 banner_image = "/uploads/chin-augmentation-woman.jpg"
 pricing_title = "Chin AugmentationPrice"
 title = "Chin Augmentation"
+[menu.main]
+parent = "Fillers"
+weight = 3
 [[list_of_prices]]
 price = "$227.00"
 service_name = "Hangover Cure"

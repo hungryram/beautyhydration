@@ -5,6 +5,9 @@ price_heading = "Lip Filler Price"
 price_subtitle = "Hangover Cure"
 pricing_title = "Lip Filler Price"
 title = "Lip Augmentation"
+[menu.main]
+parent = "Fillers"
+weight = 1
 [[list_of_prices]]
 price = "$227.00"
 service_name = "Hangover Cure"
