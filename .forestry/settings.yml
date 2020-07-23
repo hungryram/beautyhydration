@@ -4,12 +4,15 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: heading
-  label: Services
-- type: document
+- type: directory
   path: content/services
   label: Add/View Services
+  create: documents
   match: "**/*"
+  templates:
+  - service
+- type: heading
+  label: Services
 - type: heading
   label: My Profile
 - type: document
