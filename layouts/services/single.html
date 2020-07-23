@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<div class="section">
+    <div class="container">
+        {{ range .Params.service_list }}
+            <div class="columns">
+                <div class="column">
+                    <div class="service-container box" style="height:100%;padding:60px;">
+                        <h1 class="title is-2">{{ .heading }}</h1>
+                        <p>{{ .body_text }}</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img-container" style="background:url({{ .image }})no-repeat center;background-size:cover;height:100%;border-radius:3px">
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column box">
+                <h2 class="title is-2 has-text-centered pt-6">{{ .Params.pricing_title }}</h2>
+                <div class="columns has-text-centered">
+                    <div class="column">
+                        <div class="divider"></div><div class="divider-icon"><i class="fa fa-leaf skin_color"></i></div></i><div class="divider"></div>
+                    </div>
+                </div>
+                {{ range .Params.list_of_prices }}
+                <div class="columns is-mobile mb-6 pr-6 pl-6" style="border-bottom:1px dashed #e1e1e1;">
+                    <div class="column">
+                        <h4 class="title is-6 mb-2">{{ .service_name }}</h4>
+                        <p>{{ .subtitle }}</p>
+                    </div>
+                    <div class="column">
+                        <div class="has-text-right">
+                            <span class="service-page-price has-text-weight-bold">{{ .price }}</span>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ partial "featured-service.html" . }}
+{{ end }}

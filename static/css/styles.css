@@ -676,8 +676,22 @@ a.anchor-image-overlay:hover {
     }
 }
 
-span.price-preview {
+span.price-preview,
+.service-page-price {
     color: #00aeef;
+}
+
+/* CTA PAGE */
+
+.cta-page {
+    background: #00AEEF;
+}
+
+a.cta-btn {
+    background: #FFCC01;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 3px;
 }
 
 /* FOOTER */
