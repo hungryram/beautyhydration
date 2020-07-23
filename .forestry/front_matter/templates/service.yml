@@ -34,3 +34,18 @@ fields:
     max: 
     labelField: 
   label: Service List
+- name: price_heading
+  type: text
+  config:
+    required: false
+  label: Price Heading
+- name: price_subtitle
+  type: text
+  config:
+    required: false
+  label: Price Subtitle
+- name: price
+  type: text
+  config:
+    required: false
+  label: Price
