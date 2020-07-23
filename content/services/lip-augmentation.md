@@ -1,4 +1,5 @@
 +++
+banner_image = "/uploads/lip-fillers-generation.jpg"
 price = "$227.00"
 price_heading = "Lip Filler Price"
 price_subtitle = "Hangover Cure"
