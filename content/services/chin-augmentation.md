@@ -1,6 +1,6 @@
 +++
 banner_image = "/uploads/chin-augmentation-woman.jpg"
-pricing_title = "Chin AugmentationPrice"
+pricing_title = "Chin Augmentation Price"
 title = "Chin Augmentation"
 [menu.main]
 parent = "Fillers"
