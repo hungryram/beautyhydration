@@ -660,12 +660,12 @@ a.anchor-image-overlay:hover {
 
 /* PRICE PREVIEW */
 
-@media screen and (max-width: 760px) {
+/* @media screen and (max-width: 760px) {
     div.home-price-container-one {
         position: relative;
         top: 120px;
     }
-}
+} */
 
 @media screen and (min-width:1080px){
     div.home-price-container-one {

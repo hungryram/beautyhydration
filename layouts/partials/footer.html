@@ -99,11 +99,13 @@
             }
           
             window.requestAnimationFrame(updateLax)
+
+            lax.setup({
+              breakpoints: { small: 0, large: 992 }
+          })
           }
 
-          lax.setup({
-            breakpoints: { small: 700, large: 1080 }
-        })
+
 
           // COLORS
           // SECONDARY BUTTON
