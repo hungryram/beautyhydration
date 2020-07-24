@@ -1,0 +1,27 @@
+/* FIRST DROP */
+.navbar-item.main-drop .navbar-dropdown {
+    display: none;
+}
+
+.navbar-item.main-drop.is-active .navbar-dropdown {
+    display: block;
+}
+
+
+/* END */
+
+/* FIRST DROP */
+
+.navbar-item.second-drop {
+    display: none;
+}
+
+.navbar-item.second-drop.is-active {
+    display: block!important;
+}
+
+.navbar-item.first-drop:hover .second-drop{
+    display: block!important;
+}
+
+/* THIRD DROP */
