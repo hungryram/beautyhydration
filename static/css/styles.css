@@ -296,6 +296,8 @@ li.page-item {
 }
 
 /* ALL SCREEN SIZE MENU */
+
+
 header.navbar {
     position: fixed;
     top: 0;
@@ -328,6 +330,11 @@ a.navbar-item img {
     max-height: 6rem;
 }
 
+div > a.navbar-main,
+div > a.navbar-second {
+    color: #fff;
+}
+
 a.nav-item {
     text-transform: uppercase;
     font-weight: 400;
@@ -354,7 +361,7 @@ a.nav-item {
 
 div.home-slide {
     position: relative;
-    top: -80px;
+    top: -95px;
 }
 
 section.hero__container {
@@ -442,6 +449,13 @@ a.anchor-image-overlay {
     div.image-overlay-text {
         position: relative;
         right: 70px;
+    }
+
+    a.booking {
+        background: transparent;
+        border-radius: 0;
+        border: 2px solid white;
+        color: #fff;
     }
 }
 
