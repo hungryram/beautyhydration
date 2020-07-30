@@ -7,7 +7,7 @@ price = "$227"
 service_name = "Refresh"
 subtitle = "Rehydrate your body and combat fatigue caused by dehydration"
 [[service_list]]
-body_text = "Rehydrate your body and combat fatigue caused from dehydration with our Quench IV Kit. This Kit includes six treatments of premium-quality compounds designed to replenish the fluids needed for optimal wellness.\nVitamin C\nB-Complex Vitamins\nMineral Blend"
+body_text = "Rehydrate your body and combat fatigue caused by dehydration\n\n* Vitamin C\n* B-Complex Vitamins\n* Mineral Blend"
 heading = "Refresh"
 image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 
