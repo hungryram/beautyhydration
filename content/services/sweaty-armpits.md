@@ -2,6 +2,9 @@
 banner_image = "/uploads/sweaty-armpit-botox.jpg"
 pricing_title = "Sweaty Armpits Price"
 title = "Sweaty Armpits"
+[menu.main]
+parent = "Botox"
+weight = 4
 [[list_of_prices]]
 price = "$1,000.00"
 service_name = "Sweaty Armpits"

@@ -2,10 +2,6 @@ baseURL = "https://beautyhydration.netlify.app/"
 languageCode = "en-us"
 title = "Beauty Hydration"
 [[menu.main]]
-name = "Botox"
-parent = "Beauty"
-weight = 2
-[[menu.main]]
 name = "Crows Feet"
 parent = "Botox"
 url = "/crows-feet"
