@@ -2,6 +2,9 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Virus Blaster Price"
 title = "Virus Blaster"
+[menu.main]
+parent = "Ailment"
+weight = 6
 [[list_of_prices]]
 price = "$267"
 service_name = "Virus Blaster"

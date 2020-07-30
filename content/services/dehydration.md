@@ -2,6 +2,9 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Dehydration Price"
 title = "Dehydration"
+[menu.main]
+parent = "Ailment"
+weight = 2
 [[list_of_prices]]
 price = "$227"
 service_name = "DEHYDRATION (QUENCH)"

@@ -2,6 +2,9 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Muscle Recovery Price"
 title = "Muscle Recovery"
+[menu.main]
+parent = "Ailment"
+weight = 7
 [[list_of_prices]]
 price = "$257"
 service_name = "Muscle Recovery"

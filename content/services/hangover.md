@@ -2,6 +2,9 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Hangover Price"
 title = "Hangover"
+[menu.main]
+parent = "Ailment"
+weight = 1
 [[list_of_prices]]
 price = "$247"
 service_name = "Hangover (Myers Cocktail +)"

@@ -2,6 +2,9 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Food Poisoning Price"
 title = "Food Poisoning"
+[menu.main]
+parent = "Ailment"
+weight = 4
 [[list_of_prices]]
 price = "$257"
 service_name = "Food Poisoning"

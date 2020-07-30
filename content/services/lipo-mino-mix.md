@@ -2,6 +2,9 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Lipo-Mino MixPrice"
 title = "Lipo-Mino Mix"
+[menu.main]
+parent = "Injections"
+weight = 1
 [[list_of_prices]]
 price = "$67"
 service_name = "Lipo-Mino Mix (Weight Loss)"

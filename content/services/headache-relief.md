@@ -2,6 +2,9 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Headache Relief Price"
 title = "Headache Relief"
+[menu.main]
+parent = "Ailment"
+weight = 3
 [[list_of_prices]]
 price = "$247"
 service_name = "HEADACHE RELIEF- (Myers Cocktail +)"

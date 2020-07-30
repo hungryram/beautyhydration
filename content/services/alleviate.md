@@ -2,6 +2,10 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Alleviate Price"
 title = "Alleviate"
+[menu.main]
+name = "Alleviate PMS"
+parent = "Ailment"
+weight = 5
 [[list_of_prices]]
 price = "$257"
 service_name = "Alleviate (PMS)"
