@@ -2,6 +2,9 @@
 banner_image = "/uploads/angry-lines-botox.jpg"
 pricing_title = "Angry Lines Price"
 title = "Angry Lines"
+[menu.main]
+parent = "Botox"
+weight = 1
 [[list_of_prices]]
 price = "$12/unit"
 service_name = "Angry Lines"

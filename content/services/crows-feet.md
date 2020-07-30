@@ -2,6 +2,10 @@
 banner_image = "/uploads/older-lady-with-crows-feet.jpg"
 pricing_title = "Crows Feet Price"
 title = "Crows feet"
+[menu.main]
+name = "Crows Feet"
+parent = "Botox"
+weight = 2
 [[list_of_prices]]
 price = "$12.00"
 service_name = "Crows Feet"
