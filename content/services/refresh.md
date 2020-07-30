@@ -2,6 +2,9 @@
 banner_image = "/uploads/cheek-fillers-woman.jpg"
 pricing_title = "Refresh Price"
 title = "Refresh"
+[menu.main]
+parent = "Wellness"
+weight = 1
 [[list_of_prices]]
 price = "$227"
 service_name = "Refresh"

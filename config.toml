@@ -7,11 +7,6 @@ parent = "Contact"
 url = "/about"
 weight = 1
 [[menu.main]]
-name = "Refresh"
-parent = "Wellness"
-url = "/refresh"
-weight = 1
-[[menu.main]]
 name = "Wellness"
 parent = "IV Hydration"
 weight = 1

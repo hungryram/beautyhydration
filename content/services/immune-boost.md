@@ -2,6 +2,9 @@
 banner_image = "/uploads/chin-augmentation-woman.jpg"
 pricing_title = "Immune Boost Price"
 title = "Immune Boost"
+[menu.main]
+parent = "Wellness"
+weight = 3
 [[list_of_prices]]
 price = "$237"
 service_name = "Immune Boost"

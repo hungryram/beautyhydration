@@ -2,6 +2,9 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Beauty Glow Price"
 title = "Beauty Glow"
+[menu.main]
+parent = "Wellness"
+weight = 5
 [[list_of_prices]]
 price = "$247"
 service_name = "Beauty Glow"

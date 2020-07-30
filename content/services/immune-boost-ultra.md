@@ -2,6 +2,9 @@
 banner_image = "/uploads/white-lady-with-frown-lines.jpg"
 pricing_title = ""
 title = "Immune Boost Ultra"
+[menu.main]
+parent = "Wellness"
+weight = 4
 [[list_of_prices]]
 price = "$247"
 service_name = "Immune Boost Ultra"

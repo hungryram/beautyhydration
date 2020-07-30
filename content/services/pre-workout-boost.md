@@ -2,6 +2,9 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Pre-workout Boost Price"
 title = "Pre-workout Boost"
+[menu.main]
+parent = "Wellness"
+weight = 2
 [[list_of_prices]]
 price = "$257"
 service_name = "Pre-workout Boost"
