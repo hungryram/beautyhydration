@@ -69,6 +69,7 @@ fields:
     labelField: 
   label: List of Prices
 pages:
+- content/services/angry-lines.md
 - content/services/cheek-augmentation.md
 - content/services/chin-augmentation.md
 - content/services/crows-feet.md
