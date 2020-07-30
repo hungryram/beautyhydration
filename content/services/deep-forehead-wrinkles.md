@@ -1,6 +1,5 @@
 +++
 banner_image = "/uploads/lady-with-forehead-wrinkles.jpg"
-draft = true
 pricing_title = "Deep Forehead Wrinkles"
 title = "Deep Forehead Wrinkles"
 [[list_of_prices]]
