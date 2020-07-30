@@ -1,0 +1,68 @@
+{{ $designNav := .Site.Data.design }}
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="{{ .Site.BaseURL }}">
+            {{ with $designNav.logo_and_title.logo}}
+          <img src="{{ . }}" width="112" height="28">
+          {{ end }}
+        </a>
+  
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="javascript:;">{{ .Name }}</a>
+            {{/*  FIRST LEVEL  */}}
+            <div class="navbar-dropdown">
+                {{ range .Children }}
+                <div class="nested navbar-item dropdown">
+                    <a class="navbar-item navbar-second{{ if .HasChildren }}navbar-link first-drop is-hoverable{{ end }}" href="{{ if .HasChildren }}javascript:;{{ else }}{{ .URL }}{{ end }}">
+                        {{ .Name }}
+                        </a>
+                            {{/*  SECOND LEVEL  */}}
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                {{ if .HasChildren}}
+                                    <div class="dropdown-content">
+                                    {{ range .Children }}
+                                        <a href="{{ .URL }}" class="dropdown-item">{{ .Name }}</a>
+                                    {{ end }}
+                                    </div>
+                                {{ end }}
+                            </div>
+                </div>
+                {{ end }}
+              </div>
+
+        </div>
+
+        {{ else }}
+        <a href="{{ .URL }}" class="navbar-item navbar-main">{{ .Name }}</a>
+        {{ end }} 
+        {{ end }} <!--  End range menu -->
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="buttons">
+              <a class="button booking" href="https://fhlny.myaestheticrecord.com/book/appointments" target="_blank">
+                <strong>Book Appointment</strong>
+              </a>
+              <a class="button is-light" href="https://fhlny.myaestheticrecord.com/login" target="_blank">
+                Log in
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </nav>
