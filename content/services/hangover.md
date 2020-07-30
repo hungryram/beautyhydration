@@ -1,5 +1,5 @@
 +++
-banner_image = ""
+banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Hangover Price"
 title = "Hangover"
 [[list_of_prices]]
