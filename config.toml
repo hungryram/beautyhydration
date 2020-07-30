@@ -2,6 +2,14 @@ baseURL = "https://beautyhydration.netlify.app/"
 languageCode = "en-us"
 title = "Beauty Hydration"
 [[menu.main]]
+name = "Ailment"
+parent = "IV Hydration"
+weight = 2
+[[menu.main]]
+name = "Fillers"
+parent = "Beauty"
+weight = 1
+[[menu.main]]
 name = "About"
 parent = "Contact"
 url = "/about"
@@ -9,10 +17,6 @@ weight = 1
 [[menu.main]]
 name = "Wellness"
 parent = "IV Hydration"
-weight = 1
-[[menu.main]]
-name = "Fillers"
-parent = "Beauty"
 weight = 1
 [[menu.main]]
 name = "IV Hydration"
