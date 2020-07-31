@@ -4,6 +4,17 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: My Profile
+- type: document
+  path: data/profile.yaml
+  label: Profile
+- type: heading
+  label: Website Pages
+- type: document
+  path: content/about/_index.md
+  label: About
+  match: "**/*"
 - type: directory
   path: content/services
   label: Add/View Services
@@ -11,13 +22,6 @@ sections:
   match: "**/*"
   templates:
   - service
-- type: heading
-  label: Services
-- type: heading
-  label: My Profile
-- type: document
-  path: data/profile.yaml
-  label: Profile
 - type: heading
   label: My Website
 - type: document
