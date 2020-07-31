@@ -4,7 +4,7 @@ pricing_title = "Sweaty Armpits Price"
 title = "Sweaty Armpits"
 [menu.main]
 parent = "Botox"
-weight = 3
+weight = 4
 [[list_of_prices]]
 price = "$1,000.00"
 service_name = "Sweaty Armpits"
