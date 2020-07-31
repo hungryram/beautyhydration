@@ -5,7 +5,7 @@ title = "Crows feet"
 [menu.main]
 name = "Crows Feet"
 parent = "Botox"
-weight = 2
+weight = 3
 [[list_of_prices]]
 price = "$12.00"
 service_name = "Crows Feet"

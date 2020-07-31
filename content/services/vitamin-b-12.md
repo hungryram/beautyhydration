@@ -2,6 +2,9 @@
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Vitamin B-12 Price"
 title = "Vitamin B-12"
+[menu.main]
+parent = "Injections"
+weight = 3
 [[list_of_prices]]
 price = "$59"
 service_name = "Vitamin B-12 (Energy)"

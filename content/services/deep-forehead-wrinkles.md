@@ -5,7 +5,7 @@ title = "Deep Forehead Wrinkles"
 [menu.main]
 name = "Botox"
 parent = "Beauty"
-weight = 2
+weight = 1
 [[list_of_prices]]
 price = "$12.00"
 service_name = "Deep Forehead Wrinkles"
