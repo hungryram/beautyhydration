@@ -5,9 +5,9 @@
         {{ range .Params.service_list }}
             <div class="columns">
                 <div class="column">
-                    <div class="service-container box" style="height:100%;padding:60px;">
+                    <div class="service-container box content" style="height:100%;padding:60px;">
                         <h1 class="title is-2">{{ .heading }}</h1>
-                        <p>{{ .body_text }}</p>
+                        <p>{{ .body_text | markdownify }}</p>
                     </div>
                 </div>
                 <div class="column">

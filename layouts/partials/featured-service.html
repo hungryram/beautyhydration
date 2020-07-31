@@ -2,7 +2,7 @@
 <div class="container cta-page pb-6 pt-6">
     <div class="columns has-text-centered">
         <div class="column">
-            <h2 class="title is-4 has-text-white">Book your service now!</h2>
+            <h2 class="title is-4 has-text-white">BOOK YOUR SERVICE NOW!</h2>
         </div>
         <div class="column">
             <a href="https://fhlny.myaestheticrecord.com/login" target="_blank" class="cta-btn">Book Now</a>
@@ -19,7 +19,7 @@
                 <div class="card-image">
                   <figure class="image is-4by3">
                     {{ range first 1 .Params.service_list }}
-                    <img src="{{ .image }}" alt="Extra Services">
+                    <img src="{{ .image }}" alt="Extra Services" style="object-fit: cover;">
                   </figure>
                   {{ end }}
                 </div>
