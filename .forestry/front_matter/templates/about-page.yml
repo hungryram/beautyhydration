@@ -39,3 +39,5 @@ fields:
     max: 
     labelField: 
   label: Team
+pages:
+- content/about/_index.md
