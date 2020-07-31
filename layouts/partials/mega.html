@@ -1,10 +1,13 @@
 {{ $designNav := .Site.Data.design }}
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
     <div class="navbar-brand">
         <a class="navbar-item" href="{{ .Site.BaseURL }}">
             {{ with $designNav.logo_and_title.logo}}
-          <img src="{{ . }}" width="112" height="28">
+            {{ if $.IsHome }}<img src="{{ . }}">{{ else }}
+          <img src="/uploads/bluelogo.png" alt="">
+          {{ end }}
           {{ end }}
         </a>
   
@@ -20,8 +23,8 @@
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
-        <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="javascript:;">{{ .Name }}</a>
+        <div class="navbar-item is-hoverable">
+            <a class="navbar-link" href="javascript:;" {{ if $.IsHome }}style="color: #fff"{{ else }} style="color: #2f2f31;"{{ end }}>{{ .Name }}</a><i class="fas fa-angle-down" {{ if $.IsHome }}style="color:#fff;"{{ else }} style="color:#2f2f31;"{{ end }}></i>
             {{/*  FIRST LEVEL  */}}
             <div class="navbar-dropdown">
                 {{ range .Children }}
@@ -29,6 +32,7 @@
                     <a class="navbar-item navbar-second{{ if .HasChildren }}navbar-link first-drop is-hoverable{{ end }}" href="{{ if .HasChildren }}javascript:;{{ else }}{{ .URL }}{{ end }}">
                         {{ .Name }}
                         </a>
+                        {{ if .HasChildren }}<i class="fas fa-angle-right"></i>{{ end }}
                             {{/*  SECOND LEVEL  */}}
                             <div class="dropdown-menu" id="dropdown-menu" role="menu">
                                 {{ if .HasChildren}}
@@ -46,7 +50,7 @@
         </div>
 
         {{ else }}
-        <a href="{{ .URL }}" class="navbar-item navbar-main">{{ .Name }}</a>
+        <a href="{{ .URL }}" class="navbar-item" {{ if $.IsHome }}style="color: #fff;background:transparent"{{ else }} style="color: #2f2f31;background:transparent"{{ end }}>{{ .Name }}</a>
         {{ end }} 
         {{ end }} <!--  End range menu -->
         </div>
@@ -55,7 +59,7 @@
       <div class="navbar-end">
         <div class="navbar-item">
             <div class="buttons">
-              <a class="button booking" href="https://fhlny.myaestheticrecord.com/book/appointments" target="_blank">
+              <a class="button booking" href="https://fhlny.myaestheticrecord.com/book/appointments" target="_blank"  {{ if $.IsHome }}style="border: 2px solid #fff;color: #fff"{{ end }}>
                 <strong>Book Appointment</strong>
               </a>
               <a class="button is-light" href="https://fhlny.myaestheticrecord.com/login" target="_blank">
@@ -65,4 +69,5 @@
           </div>
       </div>
     </div>
+  </div>
   </nav>

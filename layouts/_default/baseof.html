@@ -1,12 +1,28 @@
 {{ partial "head.html" . }}
 {{ partial "mega.html" . }}
 
-<div style="padding:150px 20px;background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)),url({{ .Params.banner_image }}); background-size: cover;background-position: center" class="page-banner lax" data-lax-bg-pos-y="0 0, vh 200 100 ">
+<div style="padding:150px 20px;background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)),url({{ if .Params.banner_image }}{{ .Params.banner_image }}{{ else }}{{ .Site.Data.design.banner.banner_image }}{{ end }}); background-size: cover;background-position: center" class="page-banner lax" data-lax-bg-pos-y="0 0, vh 200 500">
     <div class="section">
         <div class="container">
             <div class="columns has-text-centered">
                 <div class="column">
                     <h2 class="title is-1 has-text-white has-text-weight-light">{{ .Title }}</h2>
+                </div>
+            </div>
+            <div class="columns" style="position: absolute; top: 270px;left:0;right:0">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="cta-banner" style="background: #fff;margin:0 auto">
+                        <div class="columns has-text-centered is-vcentered">
+                            <div class="column" style="padding: 0">
+                                <p style="color:rgb(102, 102, 102);">We’re open 10:00am – 8:00pm daily</p>
+                            </div>
+                            <div class="column" style="padding: 0px">
+                                    <div class="avail">
+                                        <p><a href="https://fhlny.myaestheticrecord.com/login" target="_blank">Check Availability</a></p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
