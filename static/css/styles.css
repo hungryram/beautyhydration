@@ -110,8 +110,22 @@ nav.breadcrumb.is-small li a {
 input.input,
 textarea.textarea {
     border-radius: 0;
+    box-shadow: none;
+    padding: 25px;
 }
 
+button.button.submit {
+    background: #FFCC00;
+    text-transform: uppercase;
+    padding: 25px 50px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+div.control button.button.submit:hover {
+    background: #ecbd03;
+    color: #fff!important;
+}
 
 
 /* SHARE BUTTONS */
@@ -621,6 +635,38 @@ ul.footer-social li {
     display: inline-block;
     padding-right: 15px;
     padding-top: 10px;
+}
+
+ul.footer-social li i {
+    font-size: 20px;
+}
+
+ul.footer-contact li a {
+    color: #838f97;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+ul.footer-contact li strong {
+    color: #6a767e;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+
+ul.footer-contact li {
+    padding-top: 15px;
+    font-size: 16px;
+    color: #838f97;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 15px;
+    
+}
+
+.form-container.box {
+    background: #F7F7F7;
+    border-radius: 0;
 }
 
 .footer-links a,

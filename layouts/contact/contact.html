@@ -1,5 +1,102 @@
 {{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns is-variable is-8">
+            <div class="column">
+                <div class="form-container box pt-6 pb-6 pl-6 pr-6">
+                    <h1 class="title is-6" style="color:#00aced;text-transform:uppercase;font-weight:500">We are here for you</h1>
+                    <h1 class="title is-3 is-uppercase has-text-weight-bold">Message Us</h1>
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input name="bot-field" type="hidden"/>
+                        <div class="field is-horizontal">
+                          <div class="field-body">
+                            <div class="field">
+                              <p class="control is-expanded">
+                                <input class="input" type="text" placeholder="First Name" name="first name">
+                              </p>
+                            </div>
+                            <div class="field">
+                              <p class="control">
+                                <input class="input" type="text" placeholder="Last Name" name="last name">
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="field">
+                          <div class="control">
+                            <input class="input" type="text" placeholder="Phone" name="phone">
+                          </div>
+                        </div>
+              
+                        <div class="field">
+                          <div class="control">
+                            <input class="input" type="email" placeholder="Email" name="email address">
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <textarea class="textarea" placeholder="Your Message" name="message"></textarea>
+                          </div>
+                        </div>
+                        <div class="control">
+                          <button class="button submit">Submit</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+            <div class="column is-half">
+                
+                <div class="contact-info-page">
+                    <h1 class="title is-4 is-uppercase has-text-weight-bold">Our Contact</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quam rem expedita. Fugit blanditiis, saepe vitae quasi modi ipsa eos tempore asperiores dicta, itaque quas in laudantium nobis iusto. Molestias!</p>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.074924423006!2d-118.54212538463526!3d34.17000201896226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2990f27acf5ff%3A0x7ef036dbb21a7379!2s5444%20Yolanda%20Ave%2C%20Tarzana%2C%20CA%2091356!5e0!3m2!1sen!2sus!4v1596180775077!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    {{ $contact := .Site.Data.profile.primary_contact }}
+                    <ul class="footer-contact pt-4">
+                      {{ if gt ( len $contact.street_address ) 0 }}{{ if $contact }}<li><strong>Address</strong> <span>{{ $contact.street_address }} {{ $contact.city }} {{ $contact.state }} {{ $contact.zip_code }}</span></li> {{ end }}{{ end }}
+                      {{ if $contact.email }}<li><strong>Email:</strong> <span><a href="mailto:{{ $contact.email }}">{{ $contact.email }}</a></span></li> {{ end }}
+                      {{ if $contact.phone }}<li><strong>Phone:</strong> <span><a href="tel:{{ $contact.phone }}">{{ $contact.phone }}</a></span></li> {{ end }}
+                    </ul>
+                    {{ $footerSocial := .Site.Data.profile.social_accounts }}
+                    <ul class="footer-social pt-4">
+                      {{ with $footerSocial.facebook }}
+                      <li><a href="{{ . }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></i></a></li>
+                      {{end}}
+            
+                      {{ with $footerSocial.instagram }}
+                      <li><a href="{{ . }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                      {{end}}
+            
+                      {{ with $footerSocial.yelp }}
+                      <li><a href="{{ . }}" target="_blank" title="Yelp"><i class="fab fa-yelp"></i></a></li>
+                      {{end}}
+            
+                      {{ with $footerSocial.linkedin }}
+                      <li><a href="{{ . }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                      {{end}}
+            
+                      {{ with $footerSocial.pinterest }}
+                      <li><a href="{{ . }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                      {{end}}
+            
+                      {{ with $footerSocial.twitter }}
+                      <li><a href="{{ . }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                      {{end}}
+            
+                      {{ with $footerSocial.youtube }}
+                      <li><a href="{{ . }}" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                      {{end}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.074924423006!2d-118.54212538463526!3d34.17000201896226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2990f27acf5ff%3A0x7ef036dbb21a7379!2s5444%20Yolanda%20Ave%2C%20Tarzana%2C%20CA%2091356!5e0!3m2!1sen!2sus!4v1596180775077!5m2!1sen!2sus" frameborder="0" style="border:0;width:100%;height:400px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
 
 {{ end }}
