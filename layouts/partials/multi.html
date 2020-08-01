@@ -1,0 +1,198 @@
+{{ $designNav := .Site.Data.design }}
+
+<header class="header" id="header-scroll">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="desk-menu">
+								<div class="logo">
+										<a href="{{ .Site.BaseURL }}">
+                                            {{ with $designNav.logo_and_title.logo}}
+                                          <img src="/uploads/bluelogo.png" alt="">
+                                          
+                                          {{ end }}
+										</a>
+								</div>
+								<nav class="box-menu">
+									<div class="menu-container">
+										<div class="menu-head">
+											<a href="{{ .Site.BaseURL }}" class="mobile-logo">
+                                                {{ with $designNav.logo_and_title.logo}}
+                                                <img src="{{ . }}">
+                                              {{ end }}
+                                            </a>
+										</div>
+										<div class="menu-header-container">
+											<ul id="cd-primary-nav" class="menu">
+                                                <li class="menu-item menu-white">
+													<a href="{{ .Site.BaseURL }}">Home</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children menu-white">
+													<a href="#">Beauty</a>
+													<ul class="sub-menu">
+														<li class="menu-item menu-item-has-children">
+															<a href="#">Botox</a>
+															<ul class="sub-menu">
+																<li class="menu-item">
+																	<a href="/services/deep-forehead-wrinkles">Deep Forehead Wrinkles</a>
+																</li>
+																<li class="menu-item">
+																	<a href="/services/angry-lines">Angry Lines</a>
+																</li>
+																<li class="menu-item">
+																	<a href="/services/crows-feet">Crows Feet</a>
+																</li>
+																<li class="menu-item">
+																	<a href="/services/sweaty-armpits">Sweaty Armpits</a>
+																</li>
+															</ul>
+														</li>
+														<li class="menu-item menu-item-has-children menu-white">
+															<a href="#">Fillers</a>
+															<ul class="sub-menu">
+																<li class="menu-item">
+																	<a href="/services/lip-augmentation">Lips Augmentation</a>
+                                                                </li>
+                                                                <li class="menu-item">
+																	<a href="/services/lip-augmentation">Cheek Augmentation</a>
+                                                                </li>
+                                                                <li class="menu-item">
+																	<a href="/services/chin-augmentation">Chin Augmentation</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children menu-white">
+													<a href="#">IV Hydration</a>
+													<ul class="sub-menu">
+														<li class="menu-item menu-item-has-children">
+															<a href="#">Wellness</a>
+															<ul class="sub-menu">
+																<li class="menu-item">
+																	<a href="/services/refresh">Refresh</a>
+																</li>
+																<li class="menu-item">
+																	<a href="/services/pre-workout-boost">Pre-workout Boost</a>
+																</li>
+																<li class="menu-item">
+																	<a href="/services/immune-boost">Immune Boost</a>
+                                                                </li>
+                                                                <li class="menu-item">
+																	<a href="/services/immune-boost-ultra">Ultra Immune Boost</a>
+                                                                </li>
+                                                                <li class="menu-item">
+																	<a href="/services/fountain-of-youth">Fountain of Youth</a>
+																</li>
+															</ul>
+														</li>
+														<li class="menu-item menu-item-has-children menu-white">
+															<a href="#">Ailment</a>
+															<ul class="sub-menu">
+																<li class="menu-item">
+																	<a href="/services/hangover">Hangover</a>
+                                                                </li>
+                                                                <li class="menu-item">
+																	<a href="/services/dehydration">Dehydration</a>
+                                                                </li>
+                                                                <li class="menu-item">
+																	<a href="/services/headache-relief">Headache Relief</a>
+                                                                </li>
+                                                                <li class="menu-item">
+																	<a href="/services/food-poisoning">Food Poisoning</a>
+                                                                </li>
+                                                                <li class="menu-item">
+																	<a href="/services/alleviate">Alleviate PMS</a>
+                                                                </li>
+                                                                <li class="menu-item">
+																	<a href="/virus-blaster">Virus Blaster</a>
+                                                                </li>
+                                                                <li class="menu-item">
+																	<a href="/services/muscle-recovery">Muscle Recovery</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li class="menu-item menu-item-has-children menu-white">
+													<a href="#">Injections</a>
+													<ul class="sub-menu">
+														<li class="menu-item">
+															<a href="/services/lipo-mino-mix">Lipo-Mino Mix</a>
+														</li>
+														<li class="menu-item">
+															<a href="/services/tri-immune-boost">Tri-Immune Boost</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="/services/vitamin-b-12">Vitamin B-12</a>
+                                                        </li>
+													</ul>
+												</li>
+                                                <li class="menu-item menu-white">
+													<a href="/about">About</a>
+                                                </li>
+                                                <li class="menu-item menu-white">
+													<a href="/contact">Contact</a>
+                                                </li>
+												<!-- <li class="line"></li> -->
+                                            </ul>
+                                            <!-- <div class="cta-menu">
+                                                <ul id="cd-primary-nav" class="menu">
+                                                    <li class="menu-item menu-white">
+                                                        <a href="/contact">Contact</a>
+                                                    </li>                                                </ul>
+                                            </div> -->
+                                        </div>
+								      	<div class="menu-foot">
+									      	<div class="social">
+                                                {{ $footerSocial := .Site.Data.profile.social_accounts }}
+                                                <ul class="footer-social pt-4">
+                                                  {{ with $footerSocial.facebook }}
+                                                  <li><a href="{{ . }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></i></a></li>
+                                                  {{end}}
+                                        
+                                                  {{ with $footerSocial.instagram }}
+                                                  <li><a href="{{ . }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                                  {{end}}
+                                        
+                                                  {{ with $footerSocial.yelp }}
+                                                  <li><a href="{{ . }}" target="_blank" title="Yelp"><i class="fab fa-yelp"></i></a></li>
+                                                  {{end}}
+                                        
+                                                  {{ with $footerSocial.linkedin }}
+                                                  <li><a href="{{ . }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                                  {{end}}
+                                        
+                                                  {{ with $footerSocial.pinterest }}
+                                                  <li><a href="{{ . }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                                                  {{end}}
+                                        
+                                                  {{ with $footerSocial.twitter }}
+                                                  <li><a href="{{ . }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                                  {{end}}
+                                        
+                                                  {{ with $footerSocial.youtube }}
+                                                  <li><a href="{{ . }}" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                                                  {{end}}
+                                                </ul>
+										    </div>
+										    <hr/>
+										    <address>
+                                                {{ $contact := .Site.Data.profile.primary_contact }}
+                                                <ul>
+                                                  {{ if gt ( len $contact.street_address ) 0 }}{{ if $contact }}<li><span>{{ $contact.street_address }} {{ $contact.city }} {{ $contact.state }} {{ $contact.zip_code }}</span></li> {{ end }}{{ end }}
+                                                  {{ if $contact.email }}<li><span><a href="mailto:{{ $contact.email }}">{{ $contact.email }}</a></span></li> {{ end }}
+                                                  {{ if $contact.phone }}<li><span><a href="tel:{{ $contact.phone }}">{{ $contact.phone }}</a></span></li> {{ end }}
+                                                </ul>
+											</address>
+								      	</div>
+									</div>
+									<div class="hamburger-menu">
+										<div class="bar"></div>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>

@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
-{{ partial "mega.html" . }}
+{{ partial "multi.html" . }}
 
-<div style="padding:150px 20px;background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)),url({{ if .Params.banner_image }}{{ .Params.banner_image }}{{ else }}{{ .Site.Data.design.banner.banner_image }}{{ end }}); background-size: cover;background-position: center" class="page-banner lax" data-lax-bg-pos-y="0 0, vh 200 500">
+<div style="padding:150px 20px;background:linear-gradient(rgba(0,0,0,0.21),rgba(0,0,0,0)),url({{ if .Params.banner_image }}{{ .Params.banner_image }}{{ else }}{{ .Site.Data.design.banner.banner_image }}{{ end }}); background-size: cover;background-position: center" class="page-banner lax" data-lax-bg-pos-y="0 0, vh 200 500">
     <div class="section">
         <div class="container">
             <div class="columns has-text-centered">
