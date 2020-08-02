@@ -181,8 +181,8 @@
                                                 {{ $contact := .Site.Data.profile.primary_contact }}
                                                 <ul>
                                                   {{ if gt ( len $contact.street_address ) 0 }}{{ if $contact }}<li><span>{{ $contact.street_address }} {{ $contact.city }} {{ $contact.state }} {{ $contact.zip_code }}</span></li> {{ end }}{{ end }}
-                                                  {{ if $contact.email }}<li><span><a href="mailto:{{ $contact.email }}">{{ $contact.email }}</a></span></li> {{ end }}
-                                                  {{ if $contact.phone }}<li><span><a href="tel:{{ $contact.phone }}">{{ $contact.phone }}</a></span></li> {{ end }}
+                                                  {{ if $contact.email }}<li><span><a href="mailto:{{ $contact.email }}" style="color:#7b7b7b">{{ $contact.email }}</a></span></li> {{ end }}
+                                                  {{ if $contact.phone }}<li><span><a href="tel:{{ $contact.phone }}" style="color:#7b7b7b">{{ $contact.phone }}</a></span></li> {{ end }}
                                                 </ul>
 											</address>
 								      	</div>

@@ -638,7 +638,7 @@ ul.footer-social li {
 }
 
 ul.footer-social li i {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 ul.footer-contact li a {
@@ -740,11 +740,11 @@ body.open-menu .menu-container {
   display: none;
 }
 
-/* section {
+section {
   position: relative;
   width: 100%;
   float: left;
-} */
+}
 
 header {
   -webkit-transition: all 0.3s ease;
@@ -820,7 +820,7 @@ header .desk-menu .menu-container .menu-foot {
 }
 header .desk-menu .menu-container .menu-head {
   background: #00aced;
-  padding: 16px 10px;
+  padding: 0px 50px;
 }
 header .desk-menu .menu-container .menu-head .mobile-logo {
   padding: 3px 0;
@@ -887,7 +887,7 @@ header .desk-menu .menu-container .menu > li {
 header .desk-menu .menu-container .menu > li a {
   position: relative;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   padding: 19px 8px;
   display: block;
   font-weight: 400;
@@ -899,7 +899,7 @@ header .desk-menu .menu-container .menu > li.menu-white a {
 }
 
 header .desk-menu .menu-container .menu > li.menu-item-has-children > a {
-  padding: 19px 20px 19px 8px;
+  padding: 19px 25px 19px 8px;
   position: relative;
 }
 header .desk-menu .menu-container .menu > li.menu-item-has-children > a::before, header .desk-menu .menu-container .menu > li.menu-item-has-children > a::after {
@@ -908,7 +908,7 @@ header .desk-menu .menu-container .menu > li.menu-item-has-children > a::before,
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #4e4e4e;
+  background-color: #fff;
   position: absolute;
   content: '';
   height: 1px;
@@ -1151,12 +1151,12 @@ header.small .desk-menu .box-menu ul li.menu-white a {
     -ms-transition: all 0.1s ease;
     -o-transition: all 0.1s ease;
     transition: all 0.1s ease;
-    background: #4e4e4e;
+    background: #fff;
     top: -7px;
   }
   header .hamburger-menu .bar::before, header .hamburger-menu .bar::after {
     position: absolute;
-    background: #4e4e4e;
+    background: #fff;
     content: '';
     left: 0;
     border-radius: 5px;
