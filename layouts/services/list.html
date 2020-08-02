@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+          {{ range (where $.Site.RegularPages "Type" "services") }}
+          <div class="column is-4 more-services">
+            <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    {{ range first 1 .Params.service_list }}
+                    <img src="{{ .image }}" alt="Extra Services" style="object-fit: cover;">
+                  </figure>
+                  {{ end }}
+                </div>
+                <div class="card-content">
+                  <div class="content has-text-centered">
+                    <h2 class="title is-4">{{ .Title }}</h2>
+                    <a href="{{ .Permalink }}" class="learn-more">Learn More</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+          {{ end }}
+
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -306,8 +306,8 @@ p {
 }
 
 a.hero-button {
-    padding: 30px 50px!important;
-    font-size: 1rem;
+    padding: 20px 40px!important;
+    font-size: .7rem;
     border-radius: 0;
     background-color: #FFCC00;
     color: #fff;
@@ -423,11 +423,11 @@ a.nav-item {
 }
 
 /* HERO CONTAINER  */
-
+/* 
 div.home-slide {
     position: relative;
     top: -112px;
-}
+} */
 
 section.hero__container {
     background-size: cover;
@@ -438,6 +438,12 @@ section.hero__container {
     text-transform: uppercase;
     letter-spacing: 10px;
 }
+
+/* @media screen and (max-width: 768px) {
+  section > div.hero-body {
+    top: inheri;
+  }
+} */
 
 div.hero-body {
     left: 0;
@@ -458,19 +464,7 @@ div.hero-body {
     font-weight: 200;
 }
 
-@media screen and (max-width: 768px){
-    .hero-body h1.hero-title {
-        font-size: 3rem;
-    }
 
-    .hero-body h2.subtitle {
-        font-size: 18px;
-    }
-
-    a.hero-button {
-        font-size: .5rem;
-    }
-}
 
 /* IMAGE BOXES */
 
@@ -498,7 +492,7 @@ div.hero-body {
 
 div.image-overlay-text {
     background: #FFCC00;
-    padding: 61px;
+    padding: 40px;
     box-shadow: 4px 6px 20px #b9b9b9;
 }
 
@@ -671,7 +665,8 @@ ul.footer-contact li {
 
 .footer-links a,
 div.bottom-credit a {
-    color: #939393;
+    color: #767676;
+    font-size: .875em;
 }
 
 
@@ -1365,7 +1360,7 @@ header.small .desk-menu .box-menu ul li.menu-white a {
     display: block;
   }
   header.small .hamburger-menu {
-    top: 31px;
+    top: 60px;
   }
   header.small .hamburger-menu span {
     color: #4e4e4e;
@@ -1425,7 +1420,7 @@ header.small .desk-menu .box-menu ul li.menu-white a {
   header .hamburger-menu .bar::after,
   header .hamburger-menu .bar::before {
     width: 30px;
-    height: 3px;
+    height: 1.5px;
   }
   header .hamburger-menu .bar::before {
     bottom: 9px;

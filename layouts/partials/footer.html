@@ -55,9 +55,9 @@
       </div>
       <div class="column">
         <h4 class="subtitle is-6 has-text-weight-bold" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:#a4a4a4"{{end}}>Quick Links</h4>
-        <p><a href="/" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:#666666"{{end}}>Home</a></p>
-        <p><a href="/" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:#666666"{{end}}>About</a></p>
-        <p><a href="/" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:#666666"{{end}}>Contact</a></p>
+        <p><a href="/services" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:#666666"{{end}}>Services</a></p>
+        <p><a href="/about" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:#666666"{{end}}>About</a></p>
+        <p><a href="/contact" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:#666666"{{end}}>Contact</a></p>
       </div>
     </div>
   </div>
@@ -73,8 +73,9 @@
             <div class="column has-text-right">
                 <div class="footer-links">
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
+                        <li><a href="/terms-and-condition">Terms and Condition</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/accessibility">Accessibility</a></li>
                     </ul>
                 </div>
             </div>
@@ -275,5 +276,26 @@ $(window).scroll(function(event){
 
 })(jQuery);
 </script>
+<script type="text/javascript">
+  var _userway_config = {
+    /* uncomment the following line to override default position*/
+    /* position: '3', */
+    /* uncomment the following line to override default size (values: small, large)*/
+    /* size: 'large', */
+    /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+    /* language: 'null', */
+    /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+    /* color: '#2d68ff', */
+    /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+    /* type: '1', */
+    /* uncomment the following lines to override the accessibility statement*/
+    /* statement_text: "Our Accessibility Statement", */
+    /* statement_url: "http://www.example.com/accessibility", */
+    /* uncomment the following line to override support on mobile devices*/
+    /* mobile: true, */
+    account: 'UNObHCcqLg'
+  };
+</script>
+<script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
   </body>
 </html>
