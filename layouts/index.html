@@ -1,3 +1,6 @@
+{{ if .Site.Data.design.construction }}
+{{ partial "construction.html" . }}
+{{ else }}
 {{ partial "head.html" . }}
 {{ partial "slideshow.html" . }}
 {{ partial "image-box.html" . }}
@@ -8,3 +11,5 @@
 {{ partial "price-preview.html" . }}
 {{ partial "footer-image.html" . }}
 {{ partial "footer.html" . }}
+
+{{ end }}
