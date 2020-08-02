@@ -7,6 +7,11 @@ fields:
   config:
     required: false
   label: Title
+- name: search_engine_optimization
+  type: include
+  config: {}
+  template: seo
+  label: Search Engine Optimization
 - name: url
   type: include
   config: {}
