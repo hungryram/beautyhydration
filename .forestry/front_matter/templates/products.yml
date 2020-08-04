@@ -26,14 +26,18 @@ fields:
   type: boolean
   label: On Sale
 - name: sale_price
-  type: text
-  config:
-    required: false
+  type: number
   label: Sale Price
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
   showOnly:
     field: on_sale
     value: true
-  description: Do not include dollar sign
 - name: collections
   type: tag_list
   default: []
