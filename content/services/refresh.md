@@ -1,5 +1,5 @@
 +++
-banner_image = "/uploads/cheek-fillers-woman.jpg"
+banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Refresh Price"
 title = "Refresh"
 [menu.main]
@@ -12,6 +12,6 @@ subtitle = "Rehydrate your body and combat fatigue caused by dehydration"
 [[service_list]]
 body_text = "Rehydrate your body and combat fatigue caused by dehydration\n\n* Vitamin C\n* B-Complex Vitamins\n* Mineral Blend"
 heading = "Refresh"
-image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
+image = "/uploads/dehydration-iv-drips.jpg"
 
 +++
