@@ -1,17 +1,17 @@
 <div class="thumbnail__product">
     <a href="{{ .Permalink }}">
         <div class="thumbnail__container image">
-            <img src="{{ with .Params.images }}{{ index . 0 }}{{ end }}" alt="{{ .Title }}" class="is-1by1" style="object-fit:cover;">
+            <div class="thumbnail__image" style="background:url({{ with .Params.images }}{{ index . 0 }}{{ end }}) no-repeat center;background-size:cover;height:35vh">{{ if .Params.on_sale }}<span class="sale-tag">Sale</span>{{ end }}</div>
         </div>
     </a>
     <div class="columns thumbnail__details has-text-centered">
         <div class="column">
             <div class="product__title pt-3">
-                <h1 class="title is-6 is-uppercase mb-3">{{ .Title }}</h1>
+                <h1 class="title is-6 is-uppercase mb-1 has-text-weight-bold">{{ .Title }}</h1>
                 <p>{{ .Params.short_title }}</p>
             </div>
             <div class="product__price">
-                <h1 class="title is-6">{{ if .Params.on_sale }} <span class="sale-price">${{  .Params.price }} </span>{{ .Params.sale_price }}{{ else }}${{  .Params.price }}{{ end }}</h1>
+                <h1 class="title is-6">{{ if .Params.on_sale }} <span class="sale-price">${{ lang.NumFmt 2 .Params.price }} </span><br>${{ lang.NumFmt 2 .Params.sale_price }}{{ else }}${{ lang.NumFmt 2 .Params.price }}{{ end }}</h1>
             </div>
         </div>
     </div>
