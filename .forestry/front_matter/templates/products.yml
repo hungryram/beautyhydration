@@ -34,12 +34,12 @@ fields:
     field: on_sale
     value: true
   description: Do not include dollar sign
-- name: product_collections
+- name: collections
   type: tag_list
   default: []
   label: Product Collections
   description: Organize your product within a collection.
-- name: product_tags
+- name: product-tags
   type: tag_list
   default: []
   label: Product Tags
