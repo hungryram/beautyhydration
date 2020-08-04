@@ -26,6 +26,7 @@ fields:
   config:
     required: false
   label: Price
+  description: Do not include dollar sign
 - name: on_sale
   type: boolean
   label: On Sale
@@ -37,6 +38,7 @@ fields:
   showOnly:
     field: on_sale
     value: true
+  description: Do not include dollar sign
 - name: images
   type: image_gallery
   config: {}
