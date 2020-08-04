@@ -1,4 +1,43 @@
 ---
 label: Products
-hide_body: false
-fields: []
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: sku
+  type: text
+  config:
+    required: false
+  label: SKU
+- name: product_collections
+  type: tag_list
+  default: []
+  label: Product Collections
+  description: Organize your product within a collection.
+- name: product_tags
+  type: tag_list
+  default: []
+  label: Product Tags
+- name: price
+  type: text
+  config:
+    required: false
+  label: Price
+- name: on_sale
+  type: boolean
+  label: On Sale
+- name: sale_price
+  type: text
+  config:
+    required: false
+  label: Sale Price
+  showOnly:
+    field: on_sale
+    value: true
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
