@@ -11,6 +11,11 @@ sections:
   label: Profile
 - type: heading
   label: Website Pages
+- type: directory
+  path: content
+  label: Pages
+  create: documents
+  match: "*"
 - type: document
   path: content/about/_index.md
   label: About
@@ -30,10 +35,12 @@ sections:
   path: data/home.yaml
   label: Home Page
 - type: directory
-  path: content
-  label: Pages
+  path: content/products
+  label: Products
   create: documents
-  match: "*"
+  match: "**/*"
+  templates:
+  - products
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
