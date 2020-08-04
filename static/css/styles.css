@@ -143,8 +143,25 @@ div#share-buttons i {
     z-index: 1000;
 }
 
+ul.slick-dots li button:before {
+  font-size: 25px;
+}
 
-.slick-prev::before {
+/* SNIPCART */
+
+div.snipcart-modal__container {
+  z-index: 2000;
+}
+
+div button.snipcart-add-item {
+  width: 100%;
+  padding: 15px;
+  background: #00aeef;
+  border: none;
+  color: white;
+}
+
+/* .slick-prev::before {
     font-family: FontAwesome!important;
     content:  "\f104"!important;
     font-size: 28px!important;
@@ -155,7 +172,7 @@ div#share-buttons i {
     content:  "\f105"!important;
     font-size: 28px!important;
     color: #007bb6!important;
-}      
+}       */
 
 
 span.status {

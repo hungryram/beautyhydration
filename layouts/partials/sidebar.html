@@ -1,0 +1,24 @@
+<div class="column">
+    <div class="category__list">
+      <h2 class="subtitle is-6"><strong>Collections</strong></h2>
+        <ul>
+          {{ range $collections, $taxonomy := .Site.Taxonomies.collections }}
+          <li>
+            <a href="/collections{{ $collections | urlize | relURL }}" class="category__item" class="secondary-btn">{{ $collections | humanize }} ({{ $taxonomy.Count }})</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+    <div class="category__list pt-6">
+      <h2 class="subtitle is-6"><strong>Product Tags</strong></h2>
+        <ul>
+          {{ range $productTags, $taxonomy := index .Site.Taxonomies "product-tags" }}
+          <li>
+            <a href="/product-tags{{ $productTags | urlize | relURL }}" class="category__item" class="secondary-btn">{{ $productTags | humanize }} ({{ $taxonomy.Count }})</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+</div>

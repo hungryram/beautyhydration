@@ -6,6 +6,7 @@
           {{ partial "sidebar.html" . }}
             <div class="column is-9">
                 <div class="columns is-multiline">
+                {{ range (where .Pages "Type" "products") }}
                     <div class="column is-4">
                         {{ partial "product-thumbnail.html" . }}
                     </div>

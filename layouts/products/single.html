@@ -5,7 +5,7 @@
         <div class="columns">
             <div class="column is-6">
                 <div class="product-slide">
-                    {{ range .Params.gallery }}
+                    {{ range .Params.images }}
                     <div><img src="{{ . }}" alt="{{ $.Title }}" style="margin: 0 auto"></div>
                     {{ end }}
                   </div>
@@ -19,13 +19,6 @@
                     ${{ lang.NumFmt 2 .Params.price }}
                     {{ end }}
                 </span>
-                <div class="product-crueltyfree pt-5">
-                    <article class="media">
-                        <div class="media-left">
-                            <img src="/uploads/cruelty_free.png" alt="cruelty free icon" width="50">
-                        </div>
-                    </article>
-                </div>
                 <p>{{ .Content }}</p>
                 <div class="add__cart pb-5 pt-5">
                     <button class="snipcart-add-item"
@@ -37,49 +30,6 @@
                     + Add to Cart
                     </button>
                 </div>
-                <div class="guarantees notification">
-                    {{ if .Params.details.volume }}
-                    <div class="columns is-mobile">
-                        <div class="column">
-                            <p class="is-size-7 is-uppercase has-text-weight-medium">Volume</p>
-                        </div>
-                        <div class="column">
-                            <p class="is-size-7">{{ .Params.details.volume }}</p>
-                        </div>
-                    </div>
-                    {{ end }}
-                    {{ if .Params.details.length }}
-                    <div class="columns is-mobile">
-                        <div class="column">
-                            <p class="is-size-7 is-uppercase has-text-weight-medium">length</p>
-                        </div>
-                        <div class="column">
-                            <p class="is-size-7">{{ .Params.details.length }}</p>
-                        </div>
-                    </div>
-                    {{ end }}
-                    {{ if .Params.details.material }}
-                    <div class="columns is-mobile">
-                        <div class="column">
-                            <p class="is-size-7 is-uppercase has-text-weight-medium">Material</p>
-                        </div>
-                        <div class="column">
-                            <p class="is-size-7">{{ .Params.details.material }}</p>
-                        </div>
-                    </div>
-                    {{ end }}
-                    {{ if .Params.details.band }}
-                    <div class="columns is-mobile">
-                        <div class="column">
-                            <p class="is-size-7 is-uppercase has-text-weight-medium">Band</p>
-                        </div>
-                        <div class="column">
-                            <p class="is-size-7">{{ .Params.details.band }}</p>
-                        </div>
-                    </div>
-                    {{ end }}
-                </div>
-
             </div>
         </div>
     </div>
