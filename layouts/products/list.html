@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<div class="section">
+    <div class="container">
+        <div class="columns">
+          {{ partial "sidebar.html" . }}
+            <div class="column is-9">
+                <div class="columns is-multiline">
+                    <div class="column is-4">
+                        {{ partial "product-thumbnail.html" . }}
+                    </div>
+                {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

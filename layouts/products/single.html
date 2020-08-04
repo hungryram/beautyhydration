@@ -1,0 +1,104 @@
+{{ define "main" }}
+
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-6">
+                <div class="product-slide">
+                    {{ range .Params.gallery }}
+                    <div><img src="{{ . }}" alt="{{ $.Title }}" style="margin: 0 auto"></div>
+                    {{ end }}
+                  </div>
+            </div>
+            <div class="column product__information content">
+                <h1 class="title is-2 is-uppercase">{{.Title }}</h1>
+                <span class="product__price">
+                    {{ if .Params.on_sale }}
+                    ${{ lang.NumFmt 2 .Params.price }}<span class="sale-price">${{ lang.NumFmt 2 .Params.sale_price }}</span>
+                    {{ else }}
+                    ${{ lang.NumFmt 2 .Params.price }}
+                    {{ end }}
+                </span>
+                <div class="product-crueltyfree pt-5">
+                    <article class="media">
+                        <div class="media-left">
+                            <img src="/uploads/cruelty_free.png" alt="cruelty free icon" width="50">
+                        </div>
+                    </article>
+                </div>
+                <p>{{ .Content }}</p>
+                <div class="add__cart pb-5 pt-5">
+                    <button class="snipcart-add-item"
+                    data-item-id="{{ .Params.sku }}"
+                    data-item-price="{{ .Params.price }}"
+                    data-item-url="{{ .RelPermalink }}"
+                    data-item-image="{{ with .Params.gallery }}{{ index . 0 }}{{ end }}"
+                    data-item-name="{{ .Title }}">
+                    + Add to Cart
+                    </button>
+                </div>
+                <div class="guarantees notification">
+                    {{ if .Params.details.volume }}
+                    <div class="columns is-mobile">
+                        <div class="column">
+                            <p class="is-size-7 is-uppercase has-text-weight-medium">Volume</p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-7">{{ .Params.details.volume }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ if .Params.details.length }}
+                    <div class="columns is-mobile">
+                        <div class="column">
+                            <p class="is-size-7 is-uppercase has-text-weight-medium">length</p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-7">{{ .Params.details.length }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ if .Params.details.material }}
+                    <div class="columns is-mobile">
+                        <div class="column">
+                            <p class="is-size-7 is-uppercase has-text-weight-medium">Material</p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-7">{{ .Params.details.material }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ if .Params.details.band }}
+                    <div class="columns is-mobile">
+                        <div class="column">
+                            <p class="is-size-7 is-uppercase has-text-weight-medium">Band</p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-7">{{ .Params.details.band }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <h1 class="title is-4 is-uppercase">Other products</h1>
+            </div>
+        </div>
+        <div class="columns other-products">
+            {{ range shuffle (where $.Site.RegularPages "Type" "products") }}
+                    <div class="column">
+                        {{ partial "product-thumbnail.html" . }}
+                    </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ end }}
