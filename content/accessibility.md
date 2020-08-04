@@ -1,12 +1,14 @@
 +++
 title = "Accessibility"
+url = ""
+[search_engine_optimization]
+meta_description = ""
+title_tag = ""
 
 +++
 # www.beautyhydration.com Accessibility Statement
 
-  
-  
-Updated: December 2019. 
+Updated: December 2019.
 
 ### General
 
@@ -22,16 +24,16 @@ The **www.beautyhydration.com** accessibility menu can be enabled by clicking th
 
 ### Disclaimer
 
-**www.beautyhydration.com** continues its efforts to constantly improve the accessibility of its site and services in the belief that it is our collective moral obligation to allow seamless, accessible and unhindered use also for those of us with disabilities.   
-  
+**www.beautyhydration.com** continues its efforts to constantly improve the accessibility of its site and services in the belief that it is our collective moral obligation to allow seamless, accessible and unhindered use also for those of us with disabilities.
+
 In an ongoing effort to continually improve and remediate accessibility issues, we also regularly scan **www.beautyhydration.com** with UserWay's [Accessibility Scanner](https://UserWay.org/scanner "Free Website Accessibility Scanner") to identify and fix every possible accessibility barrier on our site. Despite our efforts to make all pages and content on **www.beautyhydration.com** fully accessible, some content may not have yet been fully adapted to the strictest accessibility standards. This may be a result of not having found or identified the most appropriate technological solution.
 
 ### Here For You
 
 If you are experiencing difficulty with any content on **www.beautyhydration.com** or require assistance with any part of our site, please contact us during normal business hours as detailed below and we will be happy to assist.
 
-### Contact Us
+### Contact
 
-If you wish to report an accessibility issue, have any questions or need assistance, please contact **www.beautyhydration.com** Customer Support as follows:   
-  
+If you wish to report an accessibility issue, have any questions or need assistance, please contact **www.beautyhydration.com** Customer Support as follows:
+
 Email: [info@beautyhydration.com](info@beautyhydration.com)
