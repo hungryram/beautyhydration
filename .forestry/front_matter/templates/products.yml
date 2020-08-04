@@ -12,21 +12,16 @@ fields:
   config:
     required: false
   label: SKU
-- name: product_collections
-  type: tag_list
-  default: []
-  label: Product Collections
-  description: Organize your product within a collection.
-- name: product_tags
-  type: tag_list
-  default: []
-  label: Product Tags
 - name: price
-  type: text
-  config:
-    required: false
+  type: number
   label: Price
-  description: Do not include dollar sign
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - name: on_sale
   type: boolean
   label: On Sale
@@ -39,6 +34,15 @@ fields:
     field: on_sale
     value: true
   description: Do not include dollar sign
+- name: product_collections
+  type: tag_list
+  default: []
+  label: Product Collections
+  description: Organize your product within a collection.
+- name: product_tags
+  type: tag_list
+  default: []
+  label: Product Tags
 - name: images
   type: image_gallery
   config: {}
