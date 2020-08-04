@@ -20,4 +20,4 @@ footer:
   footer_bio: We are a lifestyle brand that caters to your beauty and wellness needs
     and wants.
 construction:
-  enable_coming_soon: false
+  enable_coming_soon: true
