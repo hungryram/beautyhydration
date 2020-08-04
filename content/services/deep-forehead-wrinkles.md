@@ -7,7 +7,7 @@ name = "Botox"
 parent = "Beauty"
 weight = 1
 [[list_of_prices]]
-price = "$12.00"
+price = "$12.00/unit"
 service_name = "Deep Forehead Wrinkles"
 subtitle = "30 MINUTES (PRICE IS PER UNIT)"
 [[service_list]]
