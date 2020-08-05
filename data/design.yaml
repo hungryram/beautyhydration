@@ -2,7 +2,7 @@
 logo_and_title:
   logo: "/uploads/beauty-hydration_white_smallpng.png"
   company_title: Beauty Hydration
-  favicon: ''
+  favicon: "/uploads/fav.png"
 home_slideshow:
   slideshow:
   - "/uploads/vitamin-b12-shots.jpg"
@@ -20,4 +20,4 @@ footer:
   footer_bio: We are a lifestyle brand that caters to your beauty and wellness needs
     and wants.
 construction:
-  enable_coming_soon: false
+  enable_coming_soon: true
