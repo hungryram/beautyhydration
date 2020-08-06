@@ -16,5 +16,10 @@ fields:
     schema:
       format: markdown
   label: Body Text
+- name: search_engine_optimization
+  type: include
+  config: {}
+  template: seo
+  label: Search Engine Optimization
 pages:
 - content/contact/_index.md
