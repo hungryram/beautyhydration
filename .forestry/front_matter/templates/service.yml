@@ -68,6 +68,11 @@ fields:
     max: 
     labelField: 
   label: List of Prices
+- name: search_engine_optimization
+  type: include
+  config: {}
+  template: seo
+  label: Search Engine Optimization
 pages:
 - content/services/alleviate.md
 - content/services/angry-lines.md

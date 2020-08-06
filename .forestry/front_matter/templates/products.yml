@@ -51,6 +51,11 @@ fields:
   type: image_gallery
   config: {}
   label: Images
+- name: search_engine_optimization
+  type: include
+  config: {}
+  template: seo
+  label: Search Engine Optimization
 pages:
 - content/products/another-product.md
 - content/products/test-product.md
