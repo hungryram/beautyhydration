@@ -19,6 +19,10 @@ sections:
 - type: document
   path: content/about/_index.md
   label: About
+- type: document
+  path: content/contact/_index.md
+  label: Contact
+  match: "**/*"
 - type: directory
   path: content/services
   label: Add/View Services
