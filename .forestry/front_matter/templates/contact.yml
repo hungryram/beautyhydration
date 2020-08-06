@@ -16,3 +16,5 @@ fields:
     schema:
       format: markdown
   label: Body Text
+pages:
+- content/contact/_index.md
