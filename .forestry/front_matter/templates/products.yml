@@ -52,4 +52,5 @@ fields:
   config: {}
   label: Images
 pages:
+- content/products/another-product.md
 - content/products/test-product.md
