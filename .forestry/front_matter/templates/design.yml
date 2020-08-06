@@ -59,26 +59,6 @@ fields:
       maxSize: 64
     label: Banner Image
   label: Banner
-- name: colors
-  type: field_group
-  config: {}
-  fields:
-  - name: enable_black_menu_items
-    type: boolean
-    label: Enable Black menu Items
-  - name: header_background_color
-    type: color
-    label: Header Background Color
-    config:
-      required: false
-      color_format: Hex
-  - name: page_background
-    type: color
-    label: Page Title Background
-    config:
-      required: false
-      color_format: Hex
-  label: Colors
 - name: footer
   type: field_group
   config: {}
