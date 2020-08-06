@@ -39,5 +39,10 @@ fields:
     max: 
     labelField: 
   label: Team
+- name: search_engine_optimization
+  type: include
+  config: {}
+  template: seo
+  label: Search Engine Optimization
 pages:
 - content/about/_index.md
