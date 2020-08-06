@@ -12,8 +12,13 @@
 </div>
 <div class="section">
     <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title is-3">Other Services</h1>
+        </div>
+      </div>
         <div class="columns">
-          {{ range last 3 (where $.Site.RegularPages "Type" "services") }}
+          {{ range shuffle (where $.Site.RegularPages "Type" "services") | first 3 }}
           <div class="column more-services">
             <div class="card">
                 <div class="card-image">
