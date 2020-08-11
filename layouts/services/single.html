@@ -6,15 +6,28 @@
             <div class="columns">
                 <div class="column">
                     <div class="service-container box content" style="height:100%;padding:60px;">
-                        <h1 class="title is-2">{{ .heading }}</h1>
+                        <h1 class="title is-3">{{ .heading }}</h1>
                         <p>{{ .body_text | markdownify }}</p>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="img-container" style="background:url({{ .image }})no-repeat center;background-size:cover;height:100%;border-radius:3px;box-shadow:0 1px 30px rgba(0, 0, 0, 0.1)">
+                    <div class="img-container" style="background:url({{ .image }})no-repeat center;background-size:cover;height:100%;border-radius:3px;box-shadow:0 1px 30px rgba(0, 0, 0, 0.1);padding:35%">
                     </div>
                 </div>
             </div>
+            {{ if .youtube_video }}
+            <div class="columns">
+                <div class="column">
+                    <iframe style="width:100%;height:400px" class="box" src="https://www.youtube.com/embed/{{ .youtube_video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="column">
+                    <div class="service-container box content" style="height:100%;padding:60px;">
+                        <h1 class="title is-3">{{ .video_title }}</h1>
+                        <p>{{ .video_text | markdownify }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
         {{ end }}
     </div>
 </div>
@@ -24,7 +37,7 @@
     <div class="container">
         <div class="columns">
             <div class="column box">
-                <h2 class="title is-2 has-text-centered pt-6">{{ .Params.pricing_title }}</h2>
+                <h2 class="title is-3 has-text-centered pt-6">{{ .Params.pricing_title }}</h2>
                 <div class="columns has-text-centered">
                     <div class="column">
                         <div class="divider"></div><div class="divider-icon"><i class="fa fa-leaf skin_color"></i></div></i><div class="divider"></div>
@@ -32,7 +45,7 @@
                 </div>
                 {{ range .Params.list_of_prices }}
                 <div class="columns is-mobile mb-6 pr-6 pl-6" style="border-bottom:1px dashed #e1e1e1;">
-                    <div class="column">
+                    <div class="column is-8">
                         <div class="content">
                             <h4 class="title is-4 mb-2 is-size-5-mobile">{{ .service_name }}</h4>
                             <p>{{ .subtitle }}</p>
