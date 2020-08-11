@@ -5,6 +5,9 @@ title = "Food Poisoning"
 [menu.main]
 parent = "Ailment"
 weight = 4
+[search_engine_optimization]
+meta_description = ""
+title_tag = ""
 [[list_of_prices]]
 price = "$257"
 service_name = "Food Poisoning"
@@ -12,6 +15,9 @@ subtitle = ""
 [[service_list]]
 body_text = "Re-hydrates the body. Relieves nausea, vomiting, and upset stomach\n\n* B-Complex Vitamins\n* Hydroxo B-12\n* Zofran (Anti-Nausea) \n* Pepcid (heartburn/ acid reflux)"
 heading = "Food Poisoning"
-image = "/uploads/chin-augmentation-woman.jpg"
+image = "/uploads/food-poisoning.jpg"
+video_text = ""
+video_title = ""
+youtube_video = ""
 
 +++
