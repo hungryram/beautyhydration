@@ -15,7 +15,7 @@ service_name = "Alleviate (PMS)"
 subtitle = ""
 [[service_list]]
 body_text = "Compounded to help relieve symptoms of PMS, this customized IV kit includes seven treatments of premium-quality compounds which may reduce bloating, irritability, abdominal discomfort and lower back pain.\n\n* B-Complex Vitamins\n* Calcium Chloride\n* Hydroxo B12\n* Magnesium Chloride"
-heading = "Alleviate (PMS)"
+heading = "Alleviate PMS (IV Hydration )"
 image = "/uploads/alleviate.jpg"
 video_text = ""
 video_title = ""
