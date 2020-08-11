@@ -39,7 +39,21 @@ fields:
     config:
       required: false
     label: Youtube Video
-    description: Copy the video ID in the URL.<br><em>i.e. https://www.youtube.com/watch?v=</em><strong><em>xxxxxxxxxx</em></strong>
+    description: Copy the video ID in the URL to show Youtube Video<br><em>i.e. https://www.youtube.com/watch?v=</em><strong><em>xxxxxxxxxx</em></strong>
+  - name: video_title
+    type: text
+    config:
+      required: false
+    label: Video Title
+  - name: video_text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Video Text
   config:
     min: 
     max: 
