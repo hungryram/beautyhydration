@@ -1,5 +1,5 @@
 +++
-banner_image = ""
+banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 list_of_prices = []
 pricing_title = ""
 title = "Chemical Brow Lift"
