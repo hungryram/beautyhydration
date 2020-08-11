@@ -13,17 +13,13 @@
             <div class="column product__information content">
                 <h1 class="title is-2 is-uppercase">{{.Title }}</h1>
                 <span class="product__price">
-                    {{ if .Params.on_sale }}
-                    ${{ lang.NumFmt 2 .Params.price }}<span class="sale-price">${{ lang.NumFmt 2 .Params.sale_price }}</span>
-                    {{ else }}
-                    ${{ lang.NumFmt 2 .Params.price }}
-                    {{ end }}
+                    {{ if .Params.on_sale }} <span class="sale-price">${{ lang.NumFmt 2 .Params.price }} </span><strong>${{ lang.NumFmt 2 .Params.sale_price }}</strong>{{ else }}<strong>${{ lang.NumFmt 2 .Params.price }}</strong>{{ end }}
                 </span>
                 <p>{{ .Content }}</p>
                 <div class="add__cart pb-5 pt-5">
                     <button class="snipcart-add-item"
                     data-item-id="{{ .Params.sku }}"
-                    data-item-price="{{ .Params.price }}"
+                    data-item-price="{{ if .Params.on_sale }}{{ lang.NumFmt 2 .Params.sale_price }}{{ else }}{{ lang.NumFmt 2 .Params.price }}{{ end }}"
                     data-item-url="{{ .RelPermalink }}"
                     data-item-image="{{ with .Params.images }}{{ index . 0 }}{{ end }}"
                     data-item-name="{{ .Title }}">
