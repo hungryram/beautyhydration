@@ -122,6 +122,10 @@ div.snipcart-modal__container {
   z-index: 2000;
 }
 
+.snipcart-customer-signin i {
+  font-size: 24px;
+}
+
 div button.snipcart-add-item {
   width: 100%;
   padding: 15px;
@@ -1493,4 +1497,20 @@ header.small .desk-menu .box-menu ul li.menu-white a {
   header .desk-menu .menu-container .menu-foot address {
     display: none;
   }
+}
+
+
+/* CUSTOM CTA MENU */
+@media (min-width: 1087px){
+  div.cta-menu {
+    float: right;
+  }
+  a.book-link {
+    border-bottom: 3px solid #00aced;
+    height: 50px;
+  }
+}
+
+@media (max-width:1087px){
+
 }
