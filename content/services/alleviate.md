@@ -1,5 +1,5 @@
 +++
-banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
+banner_image = "/uploads/white-lady-with-frown-lines.jpg"
 pricing_title = "Alleviate Price"
 title = "Alleviate"
 [menu.main]
