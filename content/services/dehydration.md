@@ -5,13 +5,19 @@ title = "Dehydration"
 [menu.main]
 parent = "Ailment"
 weight = 2
+[search_engine_optimization]
+meta_description = ""
+title_tag = ""
 [[list_of_prices]]
 price = "$227"
 service_name = "DEHYDRATION (QUENCH)"
 subtitle = ""
 [[service_list]]
-body_text = "Rehydrate your body and combat fatigue caused from dehydration. This is designed to replenish the fluids needed for optimal wellness."
+body_text = "Rehydrate your body and combat fatigue caused from dehydration. This is designed to replenish the fluids needed for optimal wellness.\n\n* Vitamin C\n* B-Complex Vitamins\n* Mineral Blend"
 heading = "Dehydration (Quench)"
-image = "/uploads/ladsy-with-crows-feet-turned-on-the-side.jpeg"
+image = "/uploads/dehydration.JPG"
+video_text = ""
+video_title = ""
+youtube_video = ""
 
 +++

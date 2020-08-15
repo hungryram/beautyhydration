@@ -13,7 +13,7 @@ price = "$1,000.00"
 service_name = "Cheek Fillers"
 subtitle = "1 hour 30 minutes (PRICE COULD INCREASE BASED ON CLIENT)"
 [[service_list]]
-body_text = "”Fatigue”, “exhaustion” and “burnout” are all terms for a condition resulting from your body being overwhelmed with stress. This condition is extremely common, especially in fast-paced cities like Los Angeles. It can occur at any age if there are major stresses, emotional or physical. It is a state of decreased function and adaptation ability of the adrenal glands, our “fight or flight” system. It can be caused by one major stress, physical or emotional, or a result of chronic, low-grade stress over many years."
+body_text = "Hyaluronic acid is a sugar molecule that occurs naturally in the body. It helps to bind water to collagen, trapping it in the skin, so that skin can appear plumper, dewier, and more hydrated\n\nWith age, the mid face can result in volume loss. Hyaluronic acid can restore volume loss in the face and restore volume.\n\nDuration 6 months -1 Year"
 heading = "Cheek Fillers"
 image = "/uploads/cheek-fillers-woman-smiling.jpg"
 video_text = ""

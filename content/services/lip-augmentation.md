@@ -13,7 +13,7 @@ price = "$227.00"
 service_name = "Hangover Cure"
 subtitle = "1.5 Hours"
 [[service_list]]
-body_text = "Create natural lips using Juvaderm Ultra XC. It adds volume to plump lips and smooth lines."
+body_text = "Hyaluronic acid is a sugar molecule that occurs naturally in the body. It helps to bind water to collagen, trapping it in the skin, so that skin can appear plumper, dewier, and more hydrated\n\nCreate natural lips using Juvaderm . It adds volume to plump lips and smooth lines. Juvéderm injectable gel is safe and effective for lip enhancement\n\nDuration 6 months -1 Year"
 heading = "Lip Fillers"
 image = "/uploads/beautiful-lips.jpg"
 

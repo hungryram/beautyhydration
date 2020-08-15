@@ -5,6 +5,9 @@ title = "Vitamin B-12"
 [menu.main]
 parent = "Injections"
 weight = 3
+[search_engine_optimization]
+meta_description = ""
+title_tag = ""
 [[list_of_prices]]
 price = "$59"
 service_name = "Vitamin B-12 (Energy)"
@@ -12,6 +15,9 @@ subtitle = ""
 [[service_list]]
 body_text = "Energy booster and metabolism enhancer.\n\n* Hydroxocobalamin B12"
 heading = "Vitamin B-12 (Energy)"
-image = "/uploads/spa-package_royal-orchid-sheraton-hotel-towers.jpg"
+image = "/uploads/b12.JPG"
+video_text = ""
+video_title = ""
+youtube_video = ""
 
 +++
