@@ -17,7 +17,7 @@ body_text = "Designed to help bring out radiance and natural glow, this kit incl
 heading = "Beauty Glow Ultra"
 image = "/uploads/beautyglow.jpg"
 video_text = ""
-video_title = ""
-youtube_video = ""
+video_title = "IV INSERTION/ BEAUTY DRIP"
+youtube_video = "v7MqjfTNyng"
 
 +++
