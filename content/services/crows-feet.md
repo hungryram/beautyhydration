@@ -10,9 +10,9 @@ weight = 3
 meta_description = ""
 title_tag = ""
 [[list_of_prices]]
-price = "$12.00"
+price = "$12.00/unit"
 service_name = "Crows Feet"
-subtitle = "30 MINUTES (PRICE PER UNIT)"
+subtitle = "1 hour 30 minutes"
 [[service_list]]
 body_text = "Botox, also known as Botoxulinum Toxin A, is a purified protein complex that blocks the release of acetylcholine at the neuromuscular junction causing temporary paralysis of the muscles\n\n* When you smile the muscle contracts and wrinkles the skin\n* goal: relaxation of a portion of the Obibualris Oculi\n* total units: 24-30 units (could be less depending on how many wrinkles)\n* onset: results are noticeable after two days increasing over 1-2 weeks\n* duration- approximately 3- 3.5 months"
 heading = "Crows Feet (Lateral Canthus Lines)"
