@@ -12,6 +12,6 @@ heading = "Botox"
 image = "/uploads/marine-drive-laser-clinic-juvederm-injections.jpg"
 video_text = "Botox is a quick, safe and effective that will make you feel refreshed. View the before and after of our patients!"
 video_title = "Botox and Lip Filler Before and After"
-youtube_video = "2LxWhAN32GQ"
+youtube_video = "1ScPRDpfJ94"
 
 +++
