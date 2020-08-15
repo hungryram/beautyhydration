@@ -941,7 +941,7 @@ header .desk-menu .menu-container .menu > li {
 header .desk-menu .menu-container .menu > li a {
   position: relative;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   padding: 19px 8px;
   display: block;
   font-weight: 400;
@@ -1154,9 +1154,11 @@ header.small .desk-menu .box-menu ul li.menu-white a {
 } */
 
 
-@media (max-width: 991px) {
+@media (max-width: 1366px) {
 
-
+  #cd-primary-nav:last-child {
+    margin-top: 20px;
+  }
 
   /* header {
     height: inherit; removed
@@ -1344,11 +1346,11 @@ header.small .desk-menu .box-menu ul li.menu-white a {
   }
   header .desk-menu .menu-container .menu > li.menu-item-has-children a::before {
     right: 6px !important;
-    top: 22px !important;
+    top: 15px !important;
     width: 7px !important;
   }
   header .desk-menu .menu-container .menu > li.menu-item-has-children a::after {
-    top: 26px !important;
+    top: 20px !important;
     width: 7px !important;
   }
   header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu {
@@ -1381,7 +1383,7 @@ header.small .desk-menu .box-menu ul li.menu-white a {
     -o-transform: rotate(45deg) !important;
     transform: rotate(45deg) !important;
     right: 6px !important;
-    top: 22px !important;
+    top: 15px !important;
     width: 7px !important;
   }
   header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::after {
@@ -1391,7 +1393,7 @@ header.small .desk-menu .box-menu ul li.menu-white a {
     -o-transform: rotate(-45deg) !important;
     transform: rotate(-45deg) !important;
     right: 6px !important;
-    top: 26px !important;
+    top: 20px !important;
     width: 7px !important;
   }
   header .desk-menu .menu-container .menu > li:hover a:before {
@@ -1509,8 +1511,4 @@ header.small .desk-menu .box-menu ul li.menu-white a {
     border-bottom: 3px solid #00aced;
     height: 50px;
   }
-}
-
-@media (max-width:1087px){
-
 }

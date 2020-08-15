@@ -248,7 +248,7 @@ $(window).scroll(function(event){
     // RESPONSIVE MENU NAVIGATION
     $('header .desk-menu .menu-container .menu .menu-item-has-children > a').on('click', function(e) {
         e.preventDefault();
-        if(size <= 991){
+        if(size <= 1366){
             $(this).next('ul').addClass('open-sub');
         }
     });
