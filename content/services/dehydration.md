@@ -13,7 +13,7 @@ price = "$227"
 service_name = "DEHYDRATION (QUENCH)"
 subtitle = ""
 [[service_list]]
-body_text = "Rehydrate your body and combat fatigue caused from dehydration. This is designed to replenish the fluids needed for optimal wellness."
+body_text = "Rehydrate your body and combat fatigue caused from dehydration. This is designed to replenish the fluids needed for optimal wellness.\n\n* Vitamin C\n* B-Complex Vitamins\n* Mineral Blend"
 heading = "Dehydration (Quench)"
 image = "/uploads/dehydration.JPG"
 video_text = ""
