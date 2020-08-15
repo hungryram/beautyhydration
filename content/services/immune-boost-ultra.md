@@ -1,6 +1,6 @@
 +++
 banner_image = "/uploads/alleviate2.JPG"
-pricing_title = ""
+pricing_title = "Immune Boost Ultra Price"
 title = "Immune Boost Ultra"
 [menu.main]
 parent = "Wellness"
@@ -11,7 +11,7 @@ title_tag = ""
 [[list_of_prices]]
 price = "$247"
 service_name = "Immune Boost Ultra"
-subtitle = "Improve immunity"
+subtitle = "1 hour 30 minutes"
 [[service_list]]
 body_text = "Designed to help your immune system, prevent illnesses and make you feel better faster after getting sick. Can help improve immunity and promote optimal wellness.\n\n* Vitamin C\n* B-complex Vitamin\n* Zinc Chloride\n* Glutathione"
 heading = "Immune Boost Ultra"
