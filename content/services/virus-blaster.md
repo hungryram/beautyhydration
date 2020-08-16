@@ -11,9 +11,9 @@ title_tag = ""
 [[list_of_prices]]
 price = "$267"
 service_name = "Virus Blaster"
-subtitle = ""
+subtitle = "1 hour 30 minutes"
 [[service_list]]
-body_text = "Designed to help your immune system, prevent illnesses and make you feel better faster after getting sick. Can help improve immunity and promote optimal wellness\n\n* Vitamin C (double dose)\n* B-complex Vitamins\n* Zinc Chloride\n* Glutathione"
+body_text = "Designed to help your immune system, prevent illnesses and make you feel better faster after getting sick. Can help improve immunity and promote optimal wellness.\n\n* Vitamin C (double dose)\n* B-complex Vitamins\n* Zinc Chloride\n* Glutathione"
 heading = "Virus Blaster"
 image = "/uploads/virus-blaster.jpg"
 video_text = ""
