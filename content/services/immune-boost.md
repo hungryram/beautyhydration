@@ -13,7 +13,7 @@ price = "$237"
 service_name = "Immune Boost"
 subtitle = "1 hour 30 minutes"
 [[service_list]]
-body_text = "Designed to help your immune system, prevent illnesses and make you feel better faster after getting sick. Can you help improve immunity and promote optimal wellness\n\n* Vitamin C\n* B-Complex Vitamin\n* Zinc Chloride"
+body_text = "Designed to help your immune system, prevent illnesses and make you feel better faster after getting sick. Can you help improve immunity and promote optimal wellness.\n\n* Vitamin C\n* B-Complex Vitamin\n* Zinc Chloride"
 heading = "Immune Boost"
 image = "/uploads/immune-boost-iv.jpg"
 video_text = ""
