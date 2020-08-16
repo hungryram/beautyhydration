@@ -1,11 +1,26 @@
 +++
 banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
-list_of_prices = []
-pricing_title = ""
+pricing_title = "Botox Price"
 title = "Botox"
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""
+[[list_of_prices]]
+price = "$12.00/unit"
+service_name = "Deep Forehead Wrinkles"
+subtitle = "1 hour 30 minutes"
+[[list_of_prices]]
+price = "$12.00/unit"
+service_name = "Angry Lines"
+subtitle = "1 hour 30 minutes"
+[[list_of_prices]]
+price = "$12.00/unit"
+service_name = "Crows Feet"
+subtitle = "1 hour 30 minutes"
+[[list_of_prices]]
+price = "$1000"
+service_name = "Sweaty Armpits (Hyperhidrosis)"
+subtitle = "1 hour 30 minutes"
 [[service_list]]
 body_text = "Botox, also known as Botoxulinum Toxin A, is a purified protein complex that blocks the release of acetylcholine at the neuromuscular junction causing temporary paralysis of the muscles.\n\n* excess muscle activity causes a wrinkle\n* loss of dermal elastic fibers\n* skin atrophy\n* excess muscle activity"
 heading = "Botox"
