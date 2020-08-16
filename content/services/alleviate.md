@@ -12,7 +12,7 @@ title_tag = ""
 [[list_of_prices]]
 price = "$257"
 service_name = "Alleviate (PMS)"
-subtitle = ""
+subtitle = "1 hour 30 minutes"
 [[service_list]]
 body_text = "Created to help relieve symptoms of PMS. This customized IV treatment includes quality vitamins and minerals which may reduce bloating, irritability, abdominal discomfort and lower back pain.\n\n* B-Complex Vitamins\n* Calcium Chloride\n* Hydroxo B12\n* Magnesium Chloride\n* Toradol (pain)- free additional boost for pain relief"
 heading = "Alleviate PMS (IV Hydration )"
