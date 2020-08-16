@@ -10,8 +10,8 @@ meta_description = ""
 title_tag = ""
 [[list_of_prices]]
 price = "$227"
-service_name = "DEHYDRATION (QUENCH)"
-subtitle = ""
+service_name = "Dehydration (Quench)"
+subtitle = "1 hour 30 minutes"
 [[service_list]]
 body_text = "Rehydrate your body and combat fatigue caused from dehydration. This is designed to replenish the fluids needed for optimal wellness.\n\n* Vitamin C\n* B-Complex Vitamins\n* Mineral Blend"
 heading = "Dehydration (Quench)"

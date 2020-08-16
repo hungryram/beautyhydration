@@ -11,10 +11,13 @@ title_tag = ""
 [[list_of_prices]]
 price = "$59"
 service_name = "Tri-Immune Boost (Wellness)"
-subtitle = ""
+subtitle = "45 minutes"
 [[service_list]]
-body_text = "Tri-Immune Boost is a triple defense immunity formula that consists of potent antioxidants and an essential mineral that assists in supporting the body’s immune response\n\n* Glutathione\n* Zinc\n* Vitamin C"
+body_text = "Tri-Immune Boost is a triple defense immunity formula that consists of potent antioxidants and an essential mineral that assists in supporting the body’s immune response.\n\n* Glutathione\n* Zinc\n* Vitamin C"
 heading = "Tri-Immune Boost (Wellness)"
 image = "/uploads/img_9831.jpg"
+video_text = ""
+video_title = ""
+youtube_video = ""
 
 +++

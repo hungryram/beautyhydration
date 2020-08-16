@@ -9,11 +9,11 @@ weight = 3
 meta_description = ""
 title_tag = ""
 [[list_of_prices]]
-price = "$227.00"
+price = "$1,200.00"
 service_name = "Chin Augmentation"
 subtitle = "1 hour 30 minutes"
 [[service_list]]
-body_text = "Hyaluronic acid is a sugar molecule that occurs naturally in the **body.** It helps to bind water to collagen, trapping it in the skin, so that skin can appear plumper, dewier, and more hydrated\n\nsymmetric chin projection is associated with a youthful face on females and a strong jawline for males. It can help create definition and balance facial features.\n\nDuration 6 months - 1 Year"
+body_text = "Hyaluronic acid is a sugar molecule that occurs naturally in the body**.** It helps to bind water to collagen, trapping it in the skin, so that skin can appear plumper, dewier, and more hydrated.\n\nSymmetric chin projection is associated with a youthful face on females and a strong jawline for males. It can help create definition and balance facial features.\n\nDuration 6 months - 1 Year"
 heading = "Chin Augmentation"
 image = "/uploads/non-surgical-chin-augmentation.jpg"
 video_text = ""
