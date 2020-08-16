@@ -29,10 +29,10 @@ welcome_text:
 image_overlay:
   image: "/uploads/beauty-hydration-setting.jpg"
   heading: Experienced in Botox Injection & I.V. Hydration.
-  body_text: 'The owner, Shelley, saw a need that wasn’t being met: the ability of
-    busy, successful and on-the-go people to address conditions like the flu, food
-    poisoning, severe hangover, and other wellness issues promptly and effectively
-    in the privacy of their home or current location.'
+  body_text: The owner, Shelley, saw a need that wasn’t being met. he ability of busy,
+    successful and on-the-go people to address conditions like the flu, food poisoning,
+    severe hangover, and other wellness issues promptly and effectively in the privacy
+    of their home or current location.
   link: "/about"
   open_in_a_new_tab: false
   link_label: DISCOVER MORE ABOUT US
@@ -49,7 +49,7 @@ price_preview:
   - {}
 price_preview_one:
 - title: Forehead Wrinkles
-  subtitle: 45 MINUTES (PRICE PER UNIT)
+  subtitle: 1 hour 30 minutes (PRICE PER UNIT)
   price: "$12.00"
 price_preview_two:
 - title: Immune Boost
