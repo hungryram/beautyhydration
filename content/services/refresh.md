@@ -11,9 +11,9 @@ title_tag = ""
 [[list_of_prices]]
 price = "$227"
 service_name = "Refresh"
-subtitle = "Rehydrate your body and combat fatigue caused by dehydration (1 hour 30 minutes)"
+subtitle = "1 hour 30 minutes"
 [[service_list]]
-body_text = "Rehydrate your body and combat fatigue caused by dehydration\n\n* Vitamin C\n* B-Complex Vitamins\n* Mineral Blend"
+body_text = "Rehydrate your body and combat fatigue caused by dehydration.\n\n* Vitamin C\n* B-Complex Vitamins\n* Mineral Blend"
 heading = "Refresh"
 image = "/uploads/dehydration-iv-drips.jpg"
 video_text = ""
