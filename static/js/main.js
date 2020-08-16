@@ -11,7 +11,7 @@ $('.home-slide').slick({
   autoplay: true,
   speed: 1000,
   autoplaySpeed: 5000,
-  dots: true,
+  dots: false,
 });
 
 
