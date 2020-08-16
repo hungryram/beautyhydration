@@ -834,7 +834,7 @@ width: 100%;
 float: left;
 }
 header .desk-menu .logo {
-position: absolute;
+/* position: absolute; removed */
 padding-top: 8px;
 float: left;
 }
@@ -874,7 +874,7 @@ display: none;
 }
 header .desk-menu .menu-container .menu-head {
 background: #00aced;
-padding: 0px 50px;
+padding: 0px 85px;
 }
 header .desk-menu .menu-container .menu-head .mobile-logo {
 padding: 3px 0;
@@ -1452,7 +1452,7 @@ header .desk-menu .menu-container .menu li.back a::after {
 }
 header .desk-menu .menu-container .menu > li.menu-item-has-children a {
   padding: 8px 12px;
-  font-size: 11.5px;
+  font-size: 11px;
 }
 header .desk-menu .menu-container .menu > li.menu-item-has-children a::before {
   top: 18px;
