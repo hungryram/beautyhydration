@@ -11,9 +11,9 @@ title_tag = ""
 [[list_of_prices]]
 price = "$257"
 service_name = "Food Poisoning"
-subtitle = ""
+subtitle = "1 hour 30 minutes"
 [[service_list]]
-body_text = "Re-hydrates the body. Relieves nausea, vomiting, and upset stomach\n\n* B-Complex Vitamins\n* Hydroxo B-12\n* Zofran (Anti-Nausea) \n* Pepcid (heartburn/ acid reflux)"
+body_text = "Re-hydrates the body. Relieves nausea, vomiting, and upset stomach.\n\n* B-Complex Vitamins\n* Hydroxo B-12\n* Zofran (Anti-Nausea)\n* Pepcid (heartburn/ acid reflux)"
 heading = "Food Poisoning"
 image = "/uploads/food-poisoning.jpg"
 video_text = ""
