@@ -176,9 +176,10 @@
                                             </div>
                                         </div>
 								      	<div class="menu-foot">
-									      	<div class="social">
+											<hr/>
+											<div class="social">
                                                 {{ $footerSocial := .Site.Data.profile.social_accounts }}
-                                                <ul class="footer-social pt-4">
+                                                <ul class="footer-social pt-2">
                                                   {{ with $footerSocial.facebook }}
                                                   <li><a href="{{ . }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></i></a></li>
                                                   {{end}}
@@ -208,7 +209,6 @@
                                                   {{end}}
                                                 </ul>
 										    </div>
-										    <hr/>
 										    <address>
                                                 {{ $contact := .Site.Data.profile.primary_contact }}
                                                 <ul>
