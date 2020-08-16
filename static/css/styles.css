@@ -834,7 +834,7 @@ width: 100%;
 float: left;
 }
 header .desk-menu .logo {
-/* position: absolute; removed */
+position: absolute;
 padding-top: 8px;
 float: left;
 }
@@ -874,7 +874,7 @@ display: none;
 }
 header .desk-menu .menu-container .menu-head {
 background: #00aced;
-padding: 0px 85px;
+padding: 0px 50px;
 }
 header .desk-menu .menu-container .menu-head .mobile-logo {
 padding: 3px 0;
