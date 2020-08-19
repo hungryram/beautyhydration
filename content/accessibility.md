@@ -2,8 +2,8 @@
 title = "Accessibility"
 url = ""
 [search_engine_optimization]
-meta_description = ""
-title_tag = ""
+meta_description = "Beauty Hydration strives to ensure that its services are accessible to people with disabilities. www.beautyhydration.com has invested a significant amount of resources to help ensure that its website is made easier to use and more accessible for people with disabilities"
+title_tag = "Accessibility Statement - Beauty Hydration"
 
 +++
 # www.beautyhydration.com Accessibility Statement
