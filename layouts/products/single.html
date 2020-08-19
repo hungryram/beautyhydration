@@ -38,8 +38,8 @@
             </div>
         </div>
         <div class="columns">
-            {{ range shuffle (where $.Site.RegularPages "Type" "products") }}
-                    <div class="column">
+            {{ range shuffle (where $.Site.RegularPages "Type" "products") | first 4 }}
+                    <div class="column is-4">
                         {{ partial "product-thumbnail.html" . }}
                     </div>
             {{ end }}
