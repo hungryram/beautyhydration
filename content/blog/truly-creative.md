@@ -1,7 +1,7 @@
 +++
 author = []
 categories = ["Wellness"]
-date = ""
+date = 2020-06-10T07:00:00Z
 featured_image = "/uploads/img_9834.jpg"
 tags = []
 title = "Truly Creative"
