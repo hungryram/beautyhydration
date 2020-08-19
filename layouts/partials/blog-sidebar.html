@@ -1,21 +1,15 @@
   
 <div class="column">
-
-
-
-    <div class="box">
       <h2 class="subtitle is-6">Blog Categories</h2>
-        <ul>
+        <ul class="content">
             {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
           <li>
-            <i class="fas fa-angle-right" style="margin-right: 10px"></i><a href="/categories{{ $name | urlize | relURL }}" class="secondary-btn">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+            <a href="/categories{{ $name | urlize | relURL }}" class="secondary-btn">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
           </li>
           {{end}}
 
         </ul>
-    </div>
-    <div class="box">
-        <h2 class="subtitle is-6">Latest Posts<h2>
+        <h2 class="subtitle is-6 mt-6">Latest Posts<h2>
 
         {{ range  first 4 ( where $.Site.RegularPages "Type" "blog") }}
         <article class="media">
@@ -34,5 +28,4 @@
             </div>
         </article>
         {{end}}
-    </div>
 </div>

@@ -246,6 +246,15 @@ body h6.title {
   color: #00aced;
 }
 
+.content p,
+time {
+  font-family: 'Poppins', sans-serif;
+}
+
+time {
+  font-size: 13px;
+}
+
 body h1.subtitle,
 body h2.subtitle,
 body h3.subtitle,
@@ -671,6 +680,13 @@ a.cta-btn {
   color: #fff;
   padding: 20px 40px;
   border-radius: 3px;
+}
+
+/* BLOG */
+
+a.secondary-btn.readmore {
+  border-bottom: 1px solid #00aced;
+  padding-bottom: 3px;
 }
 
 /* FOOTER */

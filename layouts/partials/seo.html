@@ -36,8 +36,8 @@
     <meta property="og:type" content="website" />
 {{ else }}
     <meta property="og:image" content="{{ if .Params.images }}{{ index .Params.images 0 |absURL }}{{ else }}{{ .Params.featured_image | absURL }}{{ .Params.banner_image }}{{ end }}">
-    <meta property="og:title" content="{{ if $.Params.search_engine_optimization.title_tag }}{{ $.Params.search_engine_optimization.title_tag }}{{ end }}" />
-    <meta property="og:description" content="{{ if $.Params.search_engine_optimization.meta_description }}{{ $.Params.search_engine_optimization.meta_description }}{{ end }}" />
+    <meta property="og:title" content="{{ if $.Params.search_engine_optimization.title_tag }}{{ $.Params.search_engine_optimization.title_tag }}{{ else }}{{ $.Params.search_engine_optimization.search_engine_optimization.title_tag }}{{ end }}" />
+    <meta property="og:description" content="{{ if $.Params.search_engine_optimization.meta_description }}{{ $.Params.search_engine_optimization.meta_description }}{{ else }}{{ $.Params.search_engine_optimization.search_engine_optimization.meta_description }}{{ end }}" />
     <meta property="og:type" content="{{ if .Params.featured_image }}article{{ else }}website{{ end }}" />
 {{ end }}
 <!-- END OPEN GRAPH -->
@@ -62,6 +62,6 @@
     <title>{{ $pageConfigSeo.blog_page.search_engine_optimization.title_tag }}</title>
     <meta name="description" content="{{ $pageConfigSeo.blog_page.search_engine_optimization.meta_description }}">
 {{ else }}
-    <title>{{ $.Params.search_engine_optimization.title_tag }}</title>
-    <meta name="description" content="{{ $.Params.search_engine_optimization.meta_description }}">
+    <title>{{ $.Params.search_engine_optimization.title_tag }}{{ $.Params.search_engine_optimization.search_engine_optimization.title_tag }}</title>
+    <meta name="description" content="{{ $.Params.search_engine_optimization.meta_description }}{{ $.Params.search_engine_optimization.search_engine_optimization.meta_description }}">
 {{ end }}

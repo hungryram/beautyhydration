@@ -1,6 +1,7 @@
 baseURL = "https://beautyhydration.com/"
 languageCode = "en-us"
 title = "Beauty Hydration"
+summaryLength = 25
 [[menu.main]]
 name = "Ailment"
 parent = "IV Hydration"
