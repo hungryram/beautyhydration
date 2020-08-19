@@ -21,8 +21,8 @@
     <meta property="og:type" content="website" />
 {{ else if eq .RelPermalink "/products/" }}
     <meta property="og:image" content="{{ $logo | absURL }}" />
-    <meta property="og:title" content="{{ $pageConfigSeo.product_page.search_engine_optimization.title_tag }}" />
-    <meta property="og:description" content="{{ $pageConfigSeo.product_page.search_engine_optimization.meta_description }}" />
+    <meta property="og:title" content="{{ $pageConfigSeo.products_page.search_engine_optimization.title_tag }}" />
+    <meta property="og:description" content="{{ $pageConfigSeo.products_page.search_engine_optimization.meta_description }}" />
     <meta property="og:type" content="website" />
 {{ else if eq .RelPermalink "/services/" }}
     <meta property="og:image" content="{{ $logo | absURL }}" />
@@ -35,7 +35,7 @@
     <meta property="og:description" content="{{ $pageConfigSeo.blog_page.search_engine_optimization.meta_description }}" />
     <meta property="og:type" content="website" />
 {{ else }}
-    <meta property="og:image" content="{{ if .Params.gallery }}{{ index .Params.gallery 0 |absURL }}{{ else }}{{ .Params.featured_image | absURL }}{{ end }}">
+    <meta property="og:image" content="{{ if .Params.images }}{{ index .Params.images 0 |absURL }}{{ else }}{{ .Params.featured_image | absURL }}{{ .Params.banner_image }}{{ end }}">
     <meta property="og:title" content="{{ if $.Params.search_engine_optimization.title_tag }}{{ $.Params.search_engine_optimization.title_tag }}{{ end }}" />
     <meta property="og:description" content="{{ if $.Params.search_engine_optimization.meta_description }}{{ $.Params.search_engine_optimization.meta_description }}{{ end }}" />
     <meta property="og:type" content="{{ if .Params.featured_image }}article{{ else }}website{{ end }}" />
@@ -53,8 +53,8 @@
     <title>{{ $pageConfigSeo.about_page.search_engine_optimization.title_tag }}</title>
     <meta name="description" content="{{ $pageConfigSeo.about_page.search_engine_optimization.meta_description }}">
 {{ else if eq .RelPermalink "/products/" }}
-    <title>{{ $pageConfigSeo.product_page.search_engine_optimization.title_tag }}</title>
-    <meta name="description" content="{{ $pageConfigSeo.product_page.search_engine_optimization.meta_description }}">
+    <title>{{ $pageConfigSeo.products_page.search_engine_optimization.title_tag }}</title>
+    <meta name="description" content="{{ $pageConfigSeo.products_page.search_engine_optimization.meta_description }}">
 {{ else if eq .RelPermalink "/services/" }}
     <title>{{ $pageConfigSeo.faq_page.search_engine_optimization.title_tag }}</title>
     <meta name="description" content="{{ $pageConfigSeo.faq_page.search_engine_optimization.meta_description }}">
