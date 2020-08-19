@@ -1514,3 +1514,39 @@ a.book-link {
   height: 50px;
 }
 }
+
+/* PAGINATION */
+
+.pagination li a {
+  transition: all .3s ease;
+  color: #00aced;
+}
+
+.pagination li:hover a {
+  background: #DCE0E0;
+  transition: all .3s ease;
+}
+
+ul.pagination {
+  justify-content: center;
+}
+
+li.page-item {
+  padding: 2px;
+  font-size: 14px;
+}
+
+.pagination-next,
+.pagination-previous {
+  background: white;
+  border-color: #fff!important;
+}
+
+li.active a {
+  background: #2e2e2e;
+  color: #ffffff;
+}
+
+.disabled {
+  display: none;
+}
