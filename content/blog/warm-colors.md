@@ -1,7 +1,7 @@
 +++
 author = []
 categories = ["Health"]
-date = ""
+date = 2020-06-17T07:00:00Z
 featured_image = "/uploads/alleviate2.JPG"
 tags = []
 title = "Warm Colors"
