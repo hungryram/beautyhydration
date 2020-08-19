@@ -7,8 +7,8 @@ name = "Alleviate PMS"
 parent = "Ailment"
 weight = 5
 [search_engine_optimization]
-meta_description = ""
-title_tag = ""
+meta_description = "Created to help relieve symptoms of PMS. This customized IV treatment includes quality vitamins and minerals which may reduce bloating, irritability, abdominal discomfort and lower back pain."
+title_tag = "Alleviatee (PMS) - Beauty Hydration"
 [[list_of_prices]]
 price = "$257"
 service_name = "Alleviate (PMS)"
