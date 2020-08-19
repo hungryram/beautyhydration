@@ -11,6 +11,10 @@ sections:
   label: Profile
 - type: heading
   label: Website Pages
+- type: document
+  path: data/pageconfig.yaml
+  label: Page Config
+  match: "**/*"
 - type: directory
   path: content
   label: Pages
