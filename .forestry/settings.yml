@@ -15,6 +15,13 @@ sections:
   path: data/pageconfig.yaml
   label: Page Config
 - type: directory
+  path: content/blog
+  label: Posts
+  create: documents
+  match: "**/*"
+  templates:
+  - blog
+- type: directory
   path: content
   label: Pages
   create: documents
