@@ -52,3 +52,5 @@ fields:
     template: seo
     label: SEO
   label: Blog Page
+pages:
+- data/pageconfig.yaml

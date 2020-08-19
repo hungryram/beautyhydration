@@ -1,0 +1,22 @@
+---
+contact_page:
+  search_engine_optimization:
+    title_tag: Get in Touch - Beauty Hydration
+    meta_description: Contact us by phone or email and our team will get back to you
+      shortly!
+about_page:
+  search_engine_optimization:
+    title_tag: About Beauty Hydration
+    meta_description: Learn more why we are the best in the business
+products_page:
+  search_engine_optimization:
+    title_tag: Shop - Beauty Hydration
+    meta_description: Shop our products at Beauty Hydration
+service_page:
+  search_engine_optimization:
+    title_tag: Our Services - Beauty Hydration
+    meta_description: View our list of services at Beauty Hydration
+blog_page:
+  search_engine_optimization:
+    title_tag: Our Blog - Beauty Hydration
+    meta_description: View a list of our blogs at Beauty Hydration
