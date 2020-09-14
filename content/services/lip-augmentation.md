@@ -9,7 +9,7 @@ title = "Lip Augmentation"
 parent = "Fillers"
 weight = 1
 [[list_of_prices]]
-price = "$700.00"
+price = "$750.00"
 service_name = "Lip Augmentation"
 subtitle = "1 hour 30 minutes"
 [[service_list]]
