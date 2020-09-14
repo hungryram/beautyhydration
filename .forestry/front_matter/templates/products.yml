@@ -56,5 +56,3 @@ fields:
   config: {}
   template: seo
   label: Search Engine Optimization
-pages:
-- content/products/another-product.md
