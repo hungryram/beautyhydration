@@ -3,8 +3,8 @@ banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Botox Price"
 title = "Botox"
 [search_engine_optimization]
-meta_description = ""
-title_tag = ""
+meta_description = "Botox is a quick, safe and effective that will make you feel refreshed. View the before and after of our patients!"
+title_tag = "Botox - Beauty Hydration"
 [[list_of_prices]]
 price = "$12.00/unit"
 service_name = "Deep Forehead Wrinkles"

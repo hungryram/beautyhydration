@@ -36,4 +36,4 @@ If you are experiencing difficulty with any content on **www.beautyhydration.com
 
 If you wish to report an accessibility issue, have any questions or need assistance, please contact **www.beautyhydration.com** Customer Support as follows:
 
-Email: [info@beautyhydration.com](info@beautyhydration.com)
+Email: [info@beautyhydration.com](mailto:info@beautyhydration.com)
