@@ -21,6 +21,13 @@ sections:
   match: "*"
   templates:
   - custom-pages
+- type: directory
+  path: content/services
+  label: Add/View Services
+  create: documents
+  match: "**/*"
+  templates:
+  - service
 - type: document
   path: content/about/_index.md
   label: About
@@ -36,13 +43,6 @@ sections:
   match: "**/*"
   templates:
   - blog
-- type: directory
-  path: content/services
-  label: Add/View Services
-  create: documents
-  match: "**/*"
-  templates:
-  - service
 - type: heading
   label: My Website
 - type: document
