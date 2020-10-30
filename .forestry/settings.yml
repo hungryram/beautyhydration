@@ -15,25 +15,12 @@ sections:
   path: data/pageconfig.yaml
   label: Page Config
 - type: directory
-  path: content/blog
-  label: Posts
-  create: documents
-  match: "**/*"
-  templates:
-  - blog
-- type: directory
   path: content
   label: Pages
   create: documents
   match: "*"
   templates:
   - custom-pages
-- type: document
-  path: content/about/_index.md
-  label: About
-- type: document
-  path: content/contact/_index.md
-  label: Contact
 - type: directory
   path: content/services
   label: Add/View Services
@@ -41,6 +28,21 @@ sections:
   match: "**/*"
   templates:
   - service
+- type: document
+  path: content/about/_index.md
+  label: About
+- type: document
+  path: content/contact/_index.md
+  label: Contact
+- type: heading
+  label: Blog
+- type: directory
+  path: content/blog
+  label: Posts
+  create: documents
+  match: "**/*"
+  templates:
+  - blog
 - type: heading
   label: My Website
 - type: document
