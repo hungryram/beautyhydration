@@ -3,7 +3,7 @@ banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Fillers Price"
 title = "Fillers"
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Hyaluronic acid is a sugar molecule that occurs naturally in the body**.** It helps to bind water to collagen, trapping it in the skin, so that skin can appear plumper, dewier, and more hydrated."
 title_tag = ""
 [[list_of_prices]]
 price = "$700.00"

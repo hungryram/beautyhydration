@@ -6,7 +6,7 @@ title = "Food Poisoning"
 parent = "Ailment"
 weight = 4
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Re-hydrates the body. Relieves nausea, vomiting, and upset stomach."
 title_tag = ""
 [[list_of_prices]]
 price = "$257"

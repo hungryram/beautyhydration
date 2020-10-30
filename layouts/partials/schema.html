@@ -1,0 +1,30 @@
+{{ $profile := $.Site.Data.profile }}
+{{ $social := $.Site.Data.profile.social_accounts }}
+<script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "LocalBusiness",
+      "name" : "{{ $profile.company_name }}",
+      "description" : "{{ $profile.search_engine_optimization.meta_description }}",
+      "logo" : "{{ .Site.Data.design.logo_and_title.logo | absURL }}",
+      "image" : "{{ .Site.Data.home.hero.image | absURL }}",
+      "telephone" : "{{ $profile.primary_contact.phone }}",
+      "address" : {
+        "@type" : "PostalAddress",
+        "streetAddress" : "{{ $profile.primary_contact.street_address }}",
+        "addressLocality" : "{{ $profile.primary_contact.city }}",
+        "addressRegion" : "{{ $profile.primary_contact.state }}",
+        "postalCode" : "{{ $profile.primary_contact.zip_code }}"
+      },
+      "url" : "{{ .Site.BaseURL }}",
+      "sameAs" : [
+        {{ if $social.facebook }}"{{ $social.facebook }}",{{- end }}
+        {{ if $social.twitter }}"{{ $social.twitter }}",{{- end -}}
+        {{ if $social.instagram }}"{{ $social.instagram }}",{{- end -}}
+        {{ if $social.Yelp }}"{{ $social.Yelp }}",{{ end }}
+        {{ if $social.youtube }}"{{ $social.youtube }}",{{- end -}}
+        {{ if $social.linkedin }}"{{ $social.linkedin }}"{{- end -}}
+        {{ if $social.pinterest }}"{{ $social.pinterest }}",{{- end -}}
+      ]
+    }
+    </script>

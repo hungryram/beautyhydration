@@ -6,7 +6,7 @@ title = "Lipo-Mino Mix"
 parent = "Injections"
 weight = 1
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Lipo-Mino Mix is a special lipotropics fat burning combination of methionine, inositol, choline, carnitine and B12. Each of these ingredients helps the body turn fat into energy and are also powerful antioxidants."
 title_tag = ""
 [[list_of_prices]]
 price = "$67"

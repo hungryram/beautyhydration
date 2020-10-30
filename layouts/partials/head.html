@@ -43,5 +43,8 @@
   src="https://www.facebook.com/tr?id=796555101137910&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+{{ if $.IsHome }}
+{{ partial "schema" . }}
+{{ end }}
 </head>
 <body>

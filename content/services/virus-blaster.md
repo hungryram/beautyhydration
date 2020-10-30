@@ -6,7 +6,7 @@ title = "Virus Blaster"
 parent = "Ailment"
 weight = 6
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Designed to help your immune system, prevent illnesses and make you feel better faster after getting sick. Can help improve immunity and promote optimal wellness"
 title_tag = ""
 [[list_of_prices]]
 price = "$267"

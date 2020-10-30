@@ -6,7 +6,7 @@ title = "Muscle Recovery"
 parent = "Ailment"
 weight = 7
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Designed to help shorten the time of recovery after an injury. Decreases recovery time. Replenishes essential nutrients. Reduces inflammation."
 title_tag = ""
 [[list_of_prices]]
 price = "$257"

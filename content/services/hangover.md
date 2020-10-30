@@ -6,7 +6,7 @@ title = "Hangover"
 parent = "Ailment"
 weight = 1
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Comprised of essential multivitamins and other nutrients, this cocktail premix is designed to help hangovers, alleviate chronic symptoms, including on-going pain such as headaches and migraines, asthma and more."
 title_tag = ""
 [[list_of_prices]]
 price = "$247"

@@ -5,6 +5,7 @@ price_heading = "Lip Filler Price"
 price_subtitle = "Hangover Cure"
 pricing_title = "Lip Filler Price"
 title = "Lip Augmentation"
+meta_description = "Hyaluronic acid is a sugar molecule that occurs naturally in the body. It helps to bind water to collagen, trapping it in the skin, so that skin can appear plumper, dewier, and more hydrated."
 [menu.main]
 parent = "Fillers"
 weight = 1

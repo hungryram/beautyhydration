@@ -6,7 +6,7 @@ title = "Dehydration"
 parent = "Ailment"
 weight = 2
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Rehydrate your body and combat fatigue caused from dehydration. This is designed to replenish the fluids needed for optimal wellness."
 title_tag = ""
 [[list_of_prices]]
 price = "$227"

@@ -6,7 +6,7 @@ title = "Vitamin B-12"
 parent = "Injections"
 weight = 3
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Energy booster and metabolism enhancer.\n\n* Hydroxocobalamin B12"
 title_tag = ""
 [[list_of_prices]]
 price = "$59"

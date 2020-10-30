@@ -6,7 +6,7 @@ title = "Refresh"
 parent = "Wellness"
 weight = 1
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Rehydrate your body and combat fatigue caused by dehydration."
 title_tag = ""
 [[list_of_prices]]
 price = "$227"

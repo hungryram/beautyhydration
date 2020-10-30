@@ -6,7 +6,7 @@ title = "Pre-workout Boost"
 parent = "Wellness"
 weight = 2
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Designed to help shorten the time of recovery after an injury and potentially improve athletic ability, this kit includes six treatments of premium-quality compounds that can help promote improved performance and overall wellness."
 title_tag = ""
 [[list_of_prices]]
 price = "$257"

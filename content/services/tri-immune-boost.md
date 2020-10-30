@@ -6,7 +6,7 @@ title = "Tri-Immune Boost"
 parent = "Injections"
 weight = 2
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Tri-Immune Boost is a triple defense immunity formula that consists of potent antioxidants and an essential mineral that assists in supporting the body’s immune response."
 title_tag = ""
 [[list_of_prices]]
 price = "$59"

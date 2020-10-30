@@ -6,7 +6,7 @@ title = "Beauty Glow Ultra"
 parent = "Wellness"
 weight = 6
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Designed to help bring out radiance and natural glow, this kit includes premium-quality compounds believed to fortify hair, skin and nails, reduce wrinkles and quench skin from the inside out."
 title_tag = ""
 [[list_of_prices]]
 price = "$257"

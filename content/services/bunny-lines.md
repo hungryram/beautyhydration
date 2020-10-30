@@ -3,7 +3,7 @@ banner_image = "/uploads/roberto-nickson-ycw4behkluw-unsplash.jpg"
 pricing_title = "Bunny Lines Price"
 title = "Bunny Lines"
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Botox, also known as Botoxulinum Toxin A, is a purified protein complex that blocks the release of acetylcholine at the neuromuscular junction causing temporary paralysis of the muscles"
 title_tag = ""
 [[list_of_prices]]
 price = "$12.00/unit"

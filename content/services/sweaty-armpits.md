@@ -6,7 +6,7 @@ title = "Sweaty Armpits (Hyperhidrosis)"
 parent = "Botox"
 weight = 4
 [search_engine_optimization]
-meta_description = ""
+meta_description = "Botox, also known as Botoxulinum Toxin A, is a purified protein complex that blocks the release of acetylcholine at the neuromuscular junction causing temporary paralysis of the muscles."
 title_tag = ""
 [[list_of_prices]]
 price = "$1,000.00"
