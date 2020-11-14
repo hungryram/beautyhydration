@@ -42,7 +42,6 @@ If you edit or publish an article, an additional cookie will be saved in your br
 
     <script id="CookieDeclaration" src="https://consent.cookiebot.com/96dad2bb-aa26-44da-aa5d-d5d040d8cf9f/cd.js" type="text/javascript" async></script>
 
-
 ### Embedded content from other websites
 
 Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.
