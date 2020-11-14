@@ -12,6 +12,11 @@
             <div class="column">
                     <div class="default-single content">
                         {{ .Content }}
+
+
+                        {{ if in .Permalink "privacy" }}
+                        <script id="CookieDeclaration" src="https://consent.cookiebot.com/96dad2bb-aa26-44da-aa5d-d5d040d8cf9f/cd.js" type="text/javascript" async></script>
+                        {{ end }}
                     </div>
             </div>
         </div>
