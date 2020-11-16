@@ -63,14 +63,3 @@ $('.responsive-slide').slick({
     // instead of a settings object
   ]
 });
-
-
-      //   var cookie = setTimeout(function(){ 
-      //       $(".modal").addClass("is-active");
-      //   }, 3000);
-      
-      // $(".delete").click(function() {
-      //   $("html").removeClass("is-clipped");
-      //   $('.modal').removeClass("is-active");
-      //   clearTimeout(cookie)
-      //       });
