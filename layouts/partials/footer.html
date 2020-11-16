@@ -89,7 +89,7 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
         <script src="{{.Site.BaseURL}}/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+        <script src="/js/lax.js"></script>
         <div id="snipcart" data-api-key="ZTNmNWJlMTEtODQxZC00YjA5LWJmM2MtYTdjYzY4MTc4ODI4NjM3MzIxNTgyMTQ5NTMwNDA5" hidden></div>
         <script src="https://cdn.snipcart.com/themes/v3.0.18/default/snipcart.js"></script>
 
@@ -108,9 +108,8 @@
               breakpoints: { small: 0, large: 992 }
           })
           }
-
-
-
+        </script>
+        <script>
           // COLORS
           // SECONDARY BUTTON
           document.querySelectorAll(".secondary-btn").forEach(function(el) {
@@ -120,7 +119,6 @@
           document.querySelectorAll("a.main-btn").forEach(function(bg) {
             bg.style.backgroundColor = '{{ .Site.Data.design.colors.button_background_colors }}';
           });
-
 
         </script>
         <script>
